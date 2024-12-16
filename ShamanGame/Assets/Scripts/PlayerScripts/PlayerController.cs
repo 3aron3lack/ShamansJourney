@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PlayerController : MonoBehaviour
 {
 
@@ -56,11 +57,13 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveDirection.x, 0f, moveDirection.y);
 
         Vector3 camForward = Camera.main.transform.forward;
+
         Vector3 flattenedCam = Vector3.ProjectOnPlane(camForward, Vector3.up);
         Quaternion cameraOrientation = Quaternion.LookRotation(flattenedCam);
 
         //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
 
+        //Debug.Log(Camera.main.transform.forward);
         movement = cameraOrientation * movement;
         transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);      
     }

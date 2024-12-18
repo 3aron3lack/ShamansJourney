@@ -26,7 +26,12 @@ public class PlayerController : MonoBehaviour
     public bool isLeftDrum = false;
     public bool isRightDrum = false;
 
+    // - CharacterController Values
+    private CharacterController characterController;
 
+
+
+    //private Rigidbody rb;
     //enum DrumInput { One, Two };
 
 
@@ -41,19 +46,28 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //DrumInput drumInput;
+        //rb = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         MovePlayer();
+
         //PlayDrums();
         DrumBoolTimer();
         //PlayDrumsOne();
     }
 
+    void FixedUpdate()
+    {
+    }
+
     public void MovePlayer()
     {
+
+
         Vector3 movement = new Vector3(moveDirection.x, 0f, moveDirection.y);
 
         Vector3 camForward = Camera.main.transform.forward;
@@ -61,11 +75,26 @@ public class PlayerController : MonoBehaviour
         Vector3 flattenedCam = Vector3.ProjectOnPlane(camForward, Vector3.up);
         Quaternion cameraOrientation = Quaternion.LookRotation(flattenedCam);
 
+        Vector3 fallVector = Vector3.zero;
+
+
         //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
 
         //Debug.Log(Camera.main.transform.forward);
         movement = cameraOrientation * movement;
-        transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);      
+        
+        //transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);   
+        characterController.Move(movement * moveSpeed * Time.deltaTime);
+        // Still needs gravity
+        if(characterController.isGrounded == false)
+        {
+            fallVector += Physics.gravity;
+        }
+        characterController.Move(fallVector * Time.deltaTime);
+
+
+        //rb.MovePosition(movement * moveSpeed * Time.deltaTime);
+        //rb.transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
     }
 
     public void OnPlayDrumsOne(InputAction.CallbackContext context)

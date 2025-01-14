@@ -4,8 +4,7 @@ using UnityEngine.InputSystem;
 
 
 public class PlayerController : MonoBehaviour
-{
-
+{    
     [SerializeField] private float moveSpeed = 2f;
 
     [SerializeField] private float drumBoolTimer = 5f;
@@ -55,8 +54,7 @@ public class PlayerController : MonoBehaviour
     {
         MovePlayer();
 
-        //PlayDrums();
-        DrumBoolTimer();
+        //DrumBoolTimer();
         //PlayDrumsOne();
     }
 
@@ -117,6 +115,12 @@ public class PlayerController : MonoBehaviour
             PlayDrumsTwo();
         }
     }
+
+
+    // --- NEW DRUM MECHANIC ---
+
+    
+
 
 
     public bool PlayDrumsOne()

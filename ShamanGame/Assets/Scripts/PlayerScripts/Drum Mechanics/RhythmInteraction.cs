@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RhythmInteraction : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private RhythmMaterialLerp rhythmMaterialLerp;
 
     private AudioSource audioSource;
     [SerializeField] private AudioSource notificationSource;
@@ -27,6 +27,10 @@ public class RhythmInteraction : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        rhythmMaterialLerp = GetComponent<RhythmMaterialLerp>();
+
+        //rhythmMaterialLerp.BeatMaterial();
+        //rhythmMaterialLerp.EmissionLerp();
     }
 
     // Update is called once per frame
@@ -42,6 +46,10 @@ public class RhythmInteraction : MonoBehaviour
         {
             Debug.Log("Initiate Mechanic!");
             notificationSource.PlayOneShot(successClip);
+
+            //rhythmMaterialLerp.FinishedMaterial();
+            
+
             playerInputCount = 0;
             rhythmIsPlaying = false;
         }
@@ -50,12 +58,21 @@ public class RhythmInteraction : MonoBehaviour
         {            
             if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= 60/bpm - deviationBpm)
             {
+                rhythmMaterialLerp.LerpToEmissionCol();
                 playerInputCount++;
-                Debug.Log("current time is: " + rhythmTimer);                       
+                Debug.Log("current time is: " + rhythmTimer);
+                
+                if(playerInputCount >= rhythmInitLength)
+                {
+                    // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
+                    rhythmMaterialLerp.BlinkOnEnd();
+                }
+                else
+                rhythmMaterialLerp.BlinkOnBeat();
             }
             else
             {
-                notificationSource.PlayOneShot(failClip);
+                notificationSource.PlayOneShot(failClip);               
                 Debug.Log("current time is: " + rhythmTimer);
                 playerInputCount = 0;
             }

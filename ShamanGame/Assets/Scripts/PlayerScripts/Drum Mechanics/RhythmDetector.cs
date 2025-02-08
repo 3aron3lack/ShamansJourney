@@ -24,6 +24,8 @@ public class RhythmDetector : MonoBehaviour
             hasEntered = true;
             Debug.Log("Player has entered trigger zone");
             rhythmInteractor.enabled = true;
+
+            ChangeAmbienceVolume.instance.LowerVolume();
         }
     }
 
@@ -34,6 +36,8 @@ public class RhythmDetector : MonoBehaviour
             hasEntered = false;
             Debug.Log("Player has left trigger zone");
             rhythmInteractor.enabled = false;
+
+            ChangeAmbienceVolume.instance.ReturnOriginalVolume();
         }
     }
 }

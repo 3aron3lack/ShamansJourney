@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -25,6 +26,10 @@ public class PlayerController : MonoBehaviour
     public bool isLeftDrum = false;
     public bool isRightDrum = false;
 
+    public bool isInteracting = false;
+
+    public bool canMove = true;
+
     // - CharacterController Values
     private CharacterController characterController;
 
@@ -33,7 +38,7 @@ public class PlayerController : MonoBehaviour
     //private Rigidbody rb;
     //enum DrumInput { One, Two };
 
-
+    float interactionTimer = 0;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -52,7 +57,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();
+
+        if(canMove)
+        {
+            MovePlayer();
+        }       
+        Interacting();
 
         //DrumBoolTimer();
         //PlayDrumsOne();
@@ -95,6 +105,16 @@ public class PlayerController : MonoBehaviour
         //rb.transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
     }
 
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            isInteracting = true;
+            //Interacting();
+        }
+    }
+
+
     public void OnPlayDrumsOne(InputAction.CallbackContext context)
     {
         if(context.performed)
@@ -119,7 +139,24 @@ public class PlayerController : MonoBehaviour
 
     // --- NEW DRUM MECHANIC ---
 
-    
+    // No Idea why it works now. It might just work for the dialog, so keep the old code up. It migth be necessary for later.
+    public void Interacting()
+    {
+        if(isInteracting)
+        {
+            isInteracting = false;
+
+            //interactionTimer += Time.deltaTime;
+            //Debug.Log("Interaction Timer: " + interactionTimer);
+
+            //if (interactionTimer >= 1f)
+            //{
+            //    Debug.Log("Interaction Finished");
+            //    isInteracting = false;
+            //    interactionTimer = 0;
+            //}
+        }                 
+    }
 
 
 

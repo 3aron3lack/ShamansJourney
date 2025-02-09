@@ -6,24 +6,30 @@ public class StartDialogue : MonoBehaviour
     [SerializeField] private DialogBehaviour dialogBehaviour;
     [SerializeField] private DialogNodeGraph dialogGraph;
 
+    [SerializeField] private CameraDialogueFocus cameraDialogueFocus;
+    [SerializeField] private PlayerDialogueEndCamera playerEndCamera;
+
     [SerializeField] private PlayerController player;
 
     bool playerInVicinity = false;
-
-    private ManagePlayerMovement playerMovement;
+    bool isDialogue = false;
 
     private void Start()
     {
-        dialogBehaviour.BindExternalFunction("Disable", DisableMovement);
-        dialogBehaviour.BindExternalFunction("Enable", EnableMovement);
+        dialogBehaviour.BindExternalFunction("SwitchToPlayer", CameraToPlayer);
+        dialogBehaviour.BindExternalFunction("SwitchToTarget", CameraToTarget);
+
+        playerEndCamera.newDialogue = cameraDialogueFocus;
     }
 
     private void Update()
     {
-        if (playerInVicinity && player.isInteracting)
+        if (playerInVicinity && player.isInteracting && !playerEndCamera.inDialogue)
         {
             DialogInteraction();
+            //isDialogue = true;
         }
+        
     }
 
 
@@ -32,10 +38,6 @@ public class StartDialogue : MonoBehaviour
         if(other.gameObject.CompareTag("Player") && !playerInVicinity)
         {
             playerInVicinity = true;
-            //if(player.isInteracting)
-            //{
-            //    DialogInteraction();
-            //}
         }
     }
 
@@ -52,12 +54,12 @@ public class StartDialogue : MonoBehaviour
         dialogBehaviour.StartDialog(dialogGraph);
     }
 
-    private void DisableMovement()
+    private void CameraToTarget()
     {
-        player.canMove = false;
+        cameraDialogueFocus.SwitchToTarget();
     }
-    private void EnableMovement()
+    private void CameraToPlayer()
     {
-        player.canMove = true;
+        cameraDialogueFocus.SwitchToPlayer();
     }
 }

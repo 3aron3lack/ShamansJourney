@@ -4,12 +4,12 @@ public class ManagePlayerMovement : MonoBehaviour
 {
     public PlayerController player;
 
-    void DisableMovement()
+    public void DisableMovement()
     {
         player.canMove = false;
     }
 
-    void EnableMovement()
+    public void EnableMovement()
     {
         player.canMove = true;
     }

@@ -16,20 +16,20 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 913
-    y: 80
+    x: 992
+    y: 44
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Test Subject
     Text: Too bad lol
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 2722722025549728406}
+  ParentNode: {fileID: -2258734159554533179}
   ChildNode: {fileID: 0}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: Enable
 --- !u!114 &-6813663127616788165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,19 +46,19 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 128
-    y: 133
+    x: 18
+    y: 123
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
-  IsSelected: 1
+  IsSelected: 0
   _sentence:
-    CharacterName: TestObject
+    CharacterName: Test Subject
     Text: Welcome to the dialog
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 0}
   ChildNode: {fileID: 8864309700916011667}
-  _isExternalFunc: 0
+  _isExternalFunc: 1
   _externalFunctionName: 
 --- !u!114 &-3082300541226609683
 MonoBehaviour:
@@ -76,18 +76,48 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 915
-    y: 248
+    x: 991
+    y: 237
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Test Subject
     Text: Ok
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 2722722025549728406}
+  ParentNode: {fileID: 6028863984597953226}
   ChildNode: {fileID: 0}
+  _isExternalFunc: 1
+  _externalFunctionName: Enable
+--- !u!114 &-2258734159554533179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 732
+    y: 47
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Avani
+    Text: No, I don't wanna
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2722722025549728406}
+  ChildNode: {fileID: -8369286490616064399}
   _isExternalFunc: 0
   _externalFunctionName: 
 --- !u!114 &11400000
@@ -108,6 +138,8 @@ MonoBehaviour:
   - {fileID: 2722722025549728406}
   - {fileID: -8369286490616064399}
   - {fileID: -3082300541226609683}
+  - {fileID: 6028863984597953226}
+  - {fileID: -2258734159554533179}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
 --- !u!114 &2722722025549728406
@@ -126,8 +158,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 650
-    y: 140
+    x: 512
+    y: 149
     width: 190
     height: 135
   IsDragging: 0
@@ -137,8 +169,38 @@ MonoBehaviour:
   - Yes
   ParentSentenceNode: {fileID: 8864309700916011667}
   ChildSentenceNodes:
-  - {fileID: -8369286490616064399}
-  - {fileID: -3082300541226609683}
+  - {fileID: -2258734159554533179}
+  - {fileID: 6028863984597953226}
+--- !u!114 &6028863984597953226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 734
+    y: 254
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: Avani
+    Text: Sure, why not
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 2722722025549728406}
+  ChildNode: {fileID: -3082300541226609683}
+  _isExternalFunc: 0
+  _externalFunctionName: 
 --- !u!114 &8864309700916011667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,8 +217,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 398
-    y: 128
+    x: 260
+    y: 137
     width: 190
     height: 135
   IsDragging: 0

@@ -51,6 +51,7 @@ namespace cherrydev
         /// <param name="index"></param>
         /// <param name="action"></param>
         public void AddButtonOnClickListener(int index, UnityAction action) => _buttons[index].onClick.AddListener(action);
+        
 
         // ReSharper disable Unity.PerformanceAnalysis
         /// <summary>

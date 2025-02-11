@@ -28,9 +28,6 @@ public class RhythmInteraction : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         rhythmMaterialLerp = GetComponent<RhythmMaterialLerp>();
-
-        //rhythmMaterialLerp.BeatMaterial();
-        //rhythmMaterialLerp.EmissionLerp();
     }
 
     // Update is called once per frame

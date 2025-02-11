@@ -1,30 +1,39 @@
 using System.Collections;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueAnimationController : MonoBehaviour
+public class DialogueAnimations : MonoBehaviour
 {
-
     [SerializeField] private UnityEvent OnAnimationStart;
+    [SerializeField] private string TriggerName;
     private float waitTimer = 2f;
+
 
     // This is really not clean coding, but I am too stupid or stuborn to make something else.
     [SerializeField] public LocalDialogueCheck localDialogue;
 
-    
+    public bool isAnimation = true;
+
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void StartAnimation()
     {
-        if(OnAnimationStart == null)
+        //Debug.Log("ANIMATION IS START: " + name);
+        if (OnAnimationStart == null)
         {
-            Debug.Log("No Animation");
+            Debug.Log("Local Dialogue is false");
         }
         else
         {
             //OnAnimationStart.AddListener()
-            if(localDialogue.inlocalDialogue)
+            if (localDialogue.inlocalDialogue)
             {
+                Debug.Log("Local Dialogue is true");
                 OnAnimationStart.Invoke();
             }
             //foreach (var dialogue in localDialogue)
@@ -52,12 +61,24 @@ public class DialogueAnimationController : MonoBehaviour
         Debug.Log("Second Response");
     }
 
-
-    IEnumerator TestCoroutine()
+    public void TestAnimation()
     {
-        Debug.Log("WaitTimer Start");
-        yield return new WaitForSeconds(waitTimer);
-        Debug.Log("WaitTimer Finished");
+        if (isAnimation)
+            animator.SetTrigger(TriggerName);
+        else
+            Debug.Log("Nothing lol");
     }
-    
+
+    public void AnimtationBoolOff()
+    {
+        isAnimation = false;
+    }
+
+
+    //IEnumerator TestCoroutine()
+    //{
+    //    Debug.Log("WaitTimer Start");
+    //    yield return new WaitForSeconds(waitTimer);
+    //    Debug.Log("WaitTimer Finished");
+    //}
 }

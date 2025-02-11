@@ -15,7 +15,6 @@ public class CameraDialogueFocus : MonoBehaviour
 
     public void SwitchToTarget()
     {
-        
         virtualCamera.LookAt = newTarget;
         Debug.Log("New Target is: " + newTarget.name);
         //newTarget = null;

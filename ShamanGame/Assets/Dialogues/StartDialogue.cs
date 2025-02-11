@@ -12,6 +12,10 @@ public class StartDialogue : MonoBehaviour
     [SerializeField] private LocalDialogueCheck localDialogueCheck;
     [SerializeField] private PlayerController player;
 
+    [SerializeField] private DialogNodeGraph[] dialogGraphs;
+
+    [HideInInspector] public int currentGraph = 0;
+
     bool playerInVicinity = false;
     bool isDialogue = false;
 
@@ -28,6 +32,7 @@ public class StartDialogue : MonoBehaviour
         //dialogBehaviour.BindExternalFunction("SwitchToTarget", CameraToTarget);
 
         //playerEndCamera.newDialogue = cameraDialogueFocus;
+        
     }
 
     private void Update()
@@ -46,10 +51,12 @@ public class StartDialogue : MonoBehaviour
         if(other.gameObject.CompareTag("Player") && !playerInVicinity)
         {
             playerInVicinity = true;
-            playerEndCamera.newDialogue = cameraDialogueFocus;
-            cameraDialogueFocus.NewTarget();
+            //playerEndCamera.newDialogue = cameraDialogueFocus;
+            //cameraDialogueFocus.NewTarget();
+
             //cameraDialogueFocus = playerEndCamera.newDialogue;
             //cameraDialogueFocus.NoTarget();
+            
         }
     }
 
@@ -64,10 +71,19 @@ public class StartDialogue : MonoBehaviour
         }
     }
 
-    private void DialogInteraction()
+    public void DialogInteraction()
     {
-        dialogBehaviour.StartDialog(dialogGraph);
-        //Debug.Log("THE DIALOG BEHAVIOR NAME IS: " + dialogBehaviour.name);
+        //dialogBehaviour.StartDialog(dialogGraph);
+
+        playerEndCamera.newDialogue = cameraDialogueFocus;
+        cameraDialogueFocus.NewTarget();
+
+        dialogBehaviour.StartDialog(dialogGraphs[currentGraph]);
+
+        //ChangeDialogGraph();
+
+
+        Debug.Log("THE DIALOG BEHAVIOR NAME IS: " + dialogBehaviour.name);
 
         dialogBehaviour.BindExternalFunction("SwitchToPlayer", CameraToPlayer);
         //dialogBehaviour.BindExternalFunction("SwitchToTarget", cameraDialogueFocus.SwitchToTarget);
@@ -94,10 +110,14 @@ public class StartDialogue : MonoBehaviour
         //dialogBehaviour.BindExternalFunction("SwitchToTarget", CameraToTarget);
         //cameraDialogueFocus.SwitchToTarget();
 
-        // -- For some reason this works --
+        
+
         playerEndCamera.newDialogue.SwitchToTarget();
+
         //Debug.Log("Current dialogGraph is: " + dialogGraph.name);
-        //Debug.Log("Current CameraDialogueFocus 1 is: " + cameraDialogueFocus.name);
+        Debug.Log("Current dialogGraph is: " + dialogGraphs[currentGraph].name);
+
+        Debug.Log("Current CameraDialogueFocus 1 is: " + cameraDialogueFocus.name);
         //cameraDialogueFocus.SwitchToTarget();
     }
     private void CameraToPlayer()
@@ -105,5 +125,19 @@ public class StartDialogue : MonoBehaviour
         //dialogBehaviour.BindExternalFunction("SwitchToPlayer", CameraToPlayer);     
         //cameraDialogueFocus.SwitchToPlayer();
         playerEndCamera.newDialogue.SwitchToPlayer();
+    }
+
+    public void ChangeDialogGraph()
+    {
+        if(currentGraph <=  dialogGraphs.Length-1)
+        {
+            Debug.Log("DialogGraph length is: " + (dialogGraphs.Length-1));
+            currentGraph++;
+            Debug.Log("Current DialogGraph: " + dialogGraphs[currentGraph].name);
+        }
+        else
+        {
+            currentGraph = 0;
+        }
     }
 }

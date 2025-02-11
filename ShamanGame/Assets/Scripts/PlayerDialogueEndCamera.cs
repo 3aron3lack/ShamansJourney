@@ -35,6 +35,4 @@ public class PlayerDialogueEndCamera : MonoBehaviour
         currentDialogue.SwitchToPlayer();
 
     }
-
-
 }

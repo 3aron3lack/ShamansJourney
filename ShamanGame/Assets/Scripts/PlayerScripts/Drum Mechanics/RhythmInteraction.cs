@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RhythmInteraction : MonoBehaviour
 {
     private RhythmMaterialLerp rhythmMaterialLerp;
+
+    [SerializeField] private UnityEvent OnInteractionEnd;
 
     private AudioSource audioSource;
     [SerializeField] private AudioSource notificationSource;
@@ -41,10 +44,11 @@ public class RhythmInteraction : MonoBehaviour
     {
         if(playerInputCount >= rhythmInitLength) 
         {
-            Debug.Log("Initiate Mechanic!");
+            //Debug.Log("Initiate Mechanic!");
             notificationSource.PlayOneShot(successClip);
 
             //rhythmMaterialLerp.FinishedMaterial();
+            OnInteractionEnd.Invoke();
             
 
             playerInputCount = 0;

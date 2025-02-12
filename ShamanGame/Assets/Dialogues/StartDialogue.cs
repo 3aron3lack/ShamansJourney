@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartDialogue : MonoBehaviour
 {
     [SerializeField] private DialogBehaviour dialogBehaviour;
-    [SerializeField] private DialogNodeGraph dialogGraph;
+    //[SerializeField] private DialogNodeGraph dialogGraph;
     //[SerializeField] private Transform cameraFocusObject;
     [SerializeField] private CameraDialogueFocus cameraDialogueFocus;
     [SerializeField] private PlayerDialogueEndCamera playerEndCamera;

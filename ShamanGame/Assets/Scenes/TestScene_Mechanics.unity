@@ -6330,6 +6330,8 @@ MonoBehaviour:
   inactionTimer: 0
   maxInactionTime: 3
   rhythmIsPlaying: 1
+  timeBetweenBeat: []
+  currentTBB: 0
 --- !u!82 &1605673127 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8581552374295460491, guid: 07087d0ca6eeea24e8886d41718a8a1b, type: 3}
@@ -8993,6 +8995,22 @@ PrefabInstance:
       propertyPath: notificationSource
       value: 
       objectReference: {fileID: 1605673127}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: timeBetweenBeat.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: 'timeBetweenBeat.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: 'timeBetweenBeat.Array.data[1]'
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: 'timeBetweenBeat.Array.data[2]'
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
       propertyPath: OnInteractionEnd.m_PersistentCalls.m_Calls.Array.size
       value: 3

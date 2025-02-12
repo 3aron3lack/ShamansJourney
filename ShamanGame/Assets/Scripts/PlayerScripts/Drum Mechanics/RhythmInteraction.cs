@@ -26,6 +26,9 @@ public class RhythmInteraction : MonoBehaviour
 
     public bool rhythmIsPlaying = true;
 
+    public float[] timeBetweenBeat;
+    private int currentTBB = 0;
+
 
     void Start()
     {
@@ -55,48 +58,104 @@ public class RhythmInteraction : MonoBehaviour
             rhythmIsPlaying = false;
         }
 
+        //if(playerDrums.drumCounter == true)
+        //{            
+        //    if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= 60/bpm - deviationBpm)
+        //    {
+        //        rhythmMaterialLerp.LerpToEmissionCol();
+        //        playerInputCount++;
+        //        Debug.Log("current time is: " + rhythmTimer);
+                
+        //        if(playerInputCount >= rhythmInitLength)
+        //        {
+        //            // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
+        //            rhythmMaterialLerp.BlinkOnEnd();
+        //        }
+        //        else
+        //        rhythmMaterialLerp.BlinkOnBeat();
+        //    }
+        //    else
+        //    {
+        //        notificationSource.PlayOneShot(failClip);               
+        //        Debug.Log("current time is: " + rhythmTimer);
+        //        playerInputCount = 0;
+        //    }
+        //    Debug.Log("playerInputCount is: " + playerInputCount);
+        //}
+
+        // -- New Method --
+
         if(playerDrums.drumCounter == true)
-        {            
-            if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= 60/bpm - deviationBpm)
+        {
+            if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= timeBetweenBeat[currentTBB] -  deviationBpm)
             {
                 rhythmMaterialLerp.LerpToEmissionCol();
                 playerInputCount++;
                 Debug.Log("current time is: " + rhythmTimer);
-                
-                if(playerInputCount >= rhythmInitLength)
+
+                if (playerInputCount >= rhythmInitLength)
                 {
                     // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
                     rhythmMaterialLerp.BlinkOnEnd();
                 }
                 else
-                rhythmMaterialLerp.BlinkOnBeat();
+                    rhythmMaterialLerp.BlinkOnBeat();
             }
             else
             {
-                notificationSource.PlayOneShot(failClip);               
+                notificationSource.PlayOneShot(failClip);
                 Debug.Log("current time is: " + rhythmTimer);
                 playerInputCount = 0;
             }
             Debug.Log("playerInputCount is: " + playerInputCount);
-
+        
         }
+
+
         // This is real dirty. Maybe I can uncouple it?   
         playerDrums.drumCounter = false;
     }
 
     private void RhythmTimer()
     {
-        if(rhythmIsPlaying)
+        //if(rhythmIsPlaying)
+        //{
+        //    rhythmTimer += Time.deltaTime;
+        //    if (rhythmTimer > 60 / bpm)
+        //    {
+        //        audioSource.PlayOneShot(rhythmClip);
+        //        rhythmTimer = 0;
+                
+        //    }
+
+        //    if(playerInputCount > 0)
+        //    {
+        //        inactionTimer += Time.deltaTime;
+        //        if (inactionTimer > maxInactionTime)
+        //        {
+        //            inactionTimer = 0;
+        //            playerInputCount = 0;
+        //            Debug.Log("Max Inaction Time reached");
+        //        }
+        //    }           
+        //}
+
+        // -- New Mehtod --
+        if (rhythmIsPlaying)
         {
             rhythmTimer += Time.deltaTime;
-            if (rhythmTimer > 60 / bpm)
+            if(rhythmTimer > timeBetweenBeat[currentTBB])
             {
                 audioSource.PlayOneShot(rhythmClip);
                 rhythmTimer = 0;
-                
+                currentTBB++;
+                if(currentTBB >= timeBetweenBeat.Length)
+                {
+                    currentTBB = 0;
+                }
             }
 
-            if(playerInputCount > 0)
+            if (playerInputCount > 0)
             {
                 inactionTimer += Time.deltaTime;
                 if (inactionTimer > maxInactionTime)
@@ -105,8 +164,10 @@ public class RhythmInteraction : MonoBehaviour
                     playerInputCount = 0;
                     Debug.Log("Max Inaction Time reached");
                 }
-            }           
+            }
+
         }
+
     }
  
 

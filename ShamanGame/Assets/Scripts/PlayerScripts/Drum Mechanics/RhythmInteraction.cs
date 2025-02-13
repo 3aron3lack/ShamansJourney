@@ -7,28 +7,37 @@ public class RhythmInteraction : MonoBehaviour
 
     [SerializeField] private UnityEvent OnInteractionEnd;
 
-    private AudioSource audioSource;
+    [Header("Audio Settings")]
+    
     [SerializeField] private AudioSource notificationSource;
     [SerializeField] private AudioClip rhythmClip;
     [SerializeField] private AudioClip failClip;
     [SerializeField] private AudioClip successClip;
+    private AudioSource audioSource;
 
+    [Header("Rhythm and Timer Settings")]
     [SerializeField] private int rhythmInitLength = 3;
-    public int playerInputCount = 0;
-
-    public PlayerDrumMechanic playerDrums;
-
-    public float rhythmTimer = 0;
-    public float bpm = 120;
+    private float rhythmTimer = 0;
+    //public float bpm = 120;
     public float deviationBpm = 0.3f;
-    public float inactionTimer = 0;
-    public float maxInactionTime = 3f;
 
-    public bool rhythmIsPlaying = true;
+    //public int playerInputCount = 0;
 
     public float[] timeBetweenBeat;
     private int currentTBB = 0;
 
+    
+
+    public bool rhythmIsPlaying = true;
+
+    [Header("Player Settings")]
+    public PlayerDrumMechanic playerDrums;
+
+    public int playerInputCount = 0;
+    private float inactionTimer = 0;
+
+    public float maxInactionTime = 0.2f;
+    public int currentInaction;
 
     void Start()
     {
@@ -91,7 +100,7 @@ public class RhythmInteraction : MonoBehaviour
             {
                 rhythmMaterialLerp.LerpToEmissionCol();
                 playerInputCount++;
-                Debug.Log("current time is: " + rhythmTimer);
+               // Debug.Log("current time is: " + rhythmTimer);
 
                 if (playerInputCount >= rhythmInitLength)
                 {
@@ -104,7 +113,7 @@ public class RhythmInteraction : MonoBehaviour
             else
             {
                 notificationSource.PlayOneShot(failClip);
-                Debug.Log("current time is: " + rhythmTimer);
+                //Debug.Log("current time is: " + rhythmTimer);
                 playerInputCount = 0;
             }
             Debug.Log("playerInputCount is: " + playerInputCount);
@@ -144,10 +153,12 @@ public class RhythmInteraction : MonoBehaviour
         if (rhythmIsPlaying)
         {
             rhythmTimer += Time.deltaTime;
+            //Debug.Log("rhytmTimer is: " + rhythmTimer);
             if(rhythmTimer > timeBetweenBeat[currentTBB])
             {
                 audioSource.PlayOneShot(rhythmClip);
                 rhythmTimer = 0;
+                //Debug.Log("rhytmTimer reset");
                 currentTBB++;
                 if(currentTBB >= timeBetweenBeat.Length)
                 {
@@ -158,11 +169,20 @@ public class RhythmInteraction : MonoBehaviour
             if (playerInputCount > 0)
             {
                 inactionTimer += Time.deltaTime;
-                if (inactionTimer > maxInactionTime)
+
+                currentInaction = currentTBB + 1;
+                if (currentInaction >= rhythmInitLength)
+                {
+                    currentInaction = 0;
+                }
+
+                Debug.Log("inactionTimer is: " + inactionTimer);
+                if (inactionTimer > timeBetweenBeat[currentInaction])
                 {
                     inactionTimer = 0;
+                    Debug.Log("inactionTimer reset");
                     playerInputCount = 0;
-                    Debug.Log("Max Inaction Time reached");
+                    //Debug.Log("Max Inaction Time reached");
                 }
             }
 

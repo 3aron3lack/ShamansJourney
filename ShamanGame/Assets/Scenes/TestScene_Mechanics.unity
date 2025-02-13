@@ -6322,16 +6322,13 @@ MonoBehaviour:
   failClip: {fileID: 0}
   successClip: {fileID: 0}
   rhythmInitLength: 3
-  playerInputCount: 0
-  playerDrums: {fileID: 0}
-  rhythmTimer: 0
-  bpm: 120
   deviationBpm: 0.3
-  inactionTimer: 0
-  maxInactionTime: 3
-  rhythmIsPlaying: 1
   timeBetweenBeat: []
-  currentTBB: 0
+  rhythmIsPlaying: 1
+  playerDrums: {fileID: 0}
+  playerInputCount: 0
+  maxInactionTime: 3
+  currentInaction: 0
 --- !u!82 &1605673127 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8581552374295460491, guid: 07087d0ca6eeea24e8886d41718a8a1b, type: 3}
@@ -8988,9 +8985,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2024290226}
     - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: rhythmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 003a02deefe6bef4a8825bbcae9303a9, type: 3}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
       propertyPath: playerDrums
       value: 
       objectReference: {fileID: 1634336361}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: deviationBpm
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
+      propertyPath: maxInactionTime
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7825720362732391189, guid: 95e7340933046ac43bb37af4e68e65d8, type: 3}
       propertyPath: notificationSource
       value: 

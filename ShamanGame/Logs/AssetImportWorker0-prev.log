@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.24f1 (11fa355cd605) revision 1178165'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 130907 MB
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 130907 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/Users/GBT B760M DS3H/Documents/ShamansJourney/ShamanGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52704
+64715
 -job-worker-count
 15
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/GBT B760M DS3H/Documents/ShamansJourney/ShamanGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33076]  Target information:
+Player connection [15924]  Target information:
 
-Player connection [33076]  * "[IP] 10.158.72.229 [Port] 0 [Flags] 2 [Guid] 3387669077 [EditorId] 3387669077 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RO2PPIV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15924]  * "[IP] 10.158.72.229 [Port] 0 [Flags] 2 [Guid] 2397132771 [EditorId] 2397132771 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RO2PPIV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [33076] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [33076] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15924] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15924] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 15
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,8 +75,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.84 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.49 ms.
+Refreshing native plugins compatible for Editor in 2.49 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.65 ms.
 Initialize engine version: 6000.0.24f1 (11fa355cd605)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/GBT B760M DS3H/Documents/ShamansJourney/ShamanGame/Assets
@@ -91,44 +91,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001861 seconds.
-- Loaded All Assemblies, in  0.471 seconds
+Registered in 0.001404 seconds.
+- Loaded All Assemblies, in  0.218 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.265 seconds
-Domain Reload Profiling: 735ms
-	BeginReloadAssembly (184ms)
+- Finished resetting the current domain, in  0.187 seconds
+Domain Reload Profiling: 405ms
+	BeginReloadAssembly (75ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (190ms)
-		LoadAssemblies (185ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (87ms)
+		LoadAssemblies (74ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (186ms)
-			TypeCache.Refresh (185ms)
-				TypeCache.ScanAssembly (165ms)
+		AnalyzeDomain (86ms)
+			TypeCache.Refresh (85ms)
+				TypeCache.ScanAssembly (77ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (265ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (188ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (231ms)
+		SetupLoadedEditorAssemblies (162ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (153ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -136,448 +136,56 @@ Domain Reload Profiling: 735ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.073 seconds
-Refreshing native plugins compatible for Editor in 1.74 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.585 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.654 seconds
-Domain Reload Profiling: 1725ms
-	BeginReloadAssembly (348ms)
+- Finished resetting the current domain, in  0.513 seconds
+Domain Reload Profiling: 1096ms
+	BeginReloadAssembly (212ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (662ms)
-		LoadAssemblies (392ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (322ms)
+		LoadAssemblies (204ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (345ms)
-			TypeCache.Refresh (250ms)
-				TypeCache.ScanAssembly (228ms)
-			BuildScriptInfoCaches (83ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (654ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (109ms)
+				TypeCache.ScanAssembly (98ms)
+			BuildScriptInfoCaches (54ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (513ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (447ms)
+		SetupLoadedEditorAssemblies (367ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (333ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (274ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.32 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.03 ms.
+Refreshing native plugins compatible for Editor in 1.54 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 Unloading 232 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6726 unused Assets / (5.1 MB). Loaded Objects now: 7506.
-Memory consumption went from 207.9 MB to 202.8 MB.
-Total: 7.442600 ms (FindLiveObjects: 0.471300 ms CreateObjectMapping: 0.347200 ms MarkObjects: 4.308800 ms  DeleteObjects: 2.314300 ms)
+Unloading 6726 unused Assets / (5.3 MB). Loaded Objects now: 7506.
+Memory consumption went from 210.0 MB to 204.7 MB.
+Total: 5.916700 ms (FindLiveObjects: 0.436900 ms CreateObjectMapping: 0.230100 ms MarkObjects: 3.440300 ms  DeleteObjects: 1.808800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 140449.244315 seconds.
-  path: Assets/Rocky Assets/Meshes/Stump and Branches/Stump_Stump_01.fbx
-  artifactKey: Guid(908a548e2e84da848a6ced20738ef5f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Stump and Branches/Stump_Stump_01.fbx using Guid(908a548e2e84da848a6ced20738ef5f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '290e4fb9f1359a1ebf548aad47a21d66') in 0.3825113 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Rocky Assets/Meshes/Stump and Branches/Stump_Branch_02.fbx
-  artifactKey: Guid(81f8bae3f3495724ba51358574af8b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Stump and Branches/Stump_Branch_02.fbx using Guid(81f8bae3f3495724ba51358574af8b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e1b037443c1f99c402b87c51f04cd9d') in 0.0214391 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 119.103005 seconds.
-  path: Assets/Rocky Assets/Meshes/Broken Tree/Broken_Tree_03.fbx
-  artifactKey: Guid(30c2a29800a4a7e4d8be0f0ab3327ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Broken Tree/Broken_Tree_03.fbx using Guid(30c2a29800a4a7e4d8be0f0ab3327ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09fa5b27094ad0443665045d5d017e15') in 0.0424305 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Rocky Assets/Meshes/Broken Tree/Broken_Tree_02.fbx
-  artifactKey: Guid(174d2e27a74f08c4bb08b3c8b61016cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Broken Tree/Broken_Tree_02.fbx using Guid(174d2e27a74f08c4bb08b3c8b61016cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93e3024a57859f2f44bff2a6d76bec40') in 0.0182852 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 373.042675 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Cup_04.fbx
-  artifactKey: Guid(58c2dfc28ecc81740bf3957a47be0600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Cup_04.fbx using Guid(58c2dfc28ecc81740bf3957a47be0600) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '306f0d6190c9c2f0c76487bb3bc07436') in 0.023081 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Rocky Assets/Textures/Ground.mat
-  artifactKey: Guid(908a37663cb79ad4e986de5151046345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Textures/Ground.mat using Guid(908a37663cb79ad4e986de5151046345) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '984c52e53344698de9a9fe7c8bbe5644') in 0.01882 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.917986 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_02.fbx
-  artifactKey: Guid(e8a22b7fc35194141a6aa0ce2746f9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_02.fbx using Guid(e8a22b7fc35194141a6aa0ce2746f9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '974196106b1a0b166ff58de9b47ee74d') in 0.019044 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 671.268289 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Daisy.fbx
-  artifactKey: Guid(3eb053e74fd9f8e4ea6cca9856171e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Daisy.fbx using Guid(3eb053e74fd9f8e4ea6cca9856171e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dab9e360d3c9ec32871f65a8f4cb0a61') in 0.041718 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_08.fbx
-  artifactKey: Guid(5d9b7f57164405144b4d638df83a866c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_08.fbx using Guid(5d9b7f57164405144b4d638df83a866c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12ecd16ccf75ab182c12a0df0c5ac425') in 0.0180946 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Cup_02.fbx
-  artifactKey: Guid(bbcb06a7e739c5f4ca5cbf641abd28f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Cup_02.fbx using Guid(bbcb06a7e739c5f4ca5cbf641abd28f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11b7369c9d7be1bfe4ec8c706338a179') in 0.0166183 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Lilies_02.fbx
-  artifactKey: Guid(58c982b919b1ab9459e7972d545ed00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Lilies_02.fbx using Guid(58c982b919b1ab9459e7972d545ed00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '463900d3abfee2d2e40ae3ff0e126122') in 0.0172152 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Rectangular_shape_04.fbx
-  artifactKey: Guid(eb7de6316fa1ef34f8198f899c22ef52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Rectangular_shape_04.fbx using Guid(eb7de6316fa1ef34f8198f899c22ef52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70d4605873200429b5b98269dc65598d') in 0.01783 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_ball_shape_02.fbx
-  artifactKey: Guid(c7d4c948bb3c0eb49b1743c181e16ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_ball_shape_02.fbx using Guid(c7d4c948bb3c0eb49b1743c181e16ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28eade6f8a438fa2171c54990565a0a0') in 0.0204516 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_06.fbx
-  artifactKey: Guid(230fd2cd4eb40774bad1446d6acf3349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_06.fbx using Guid(230fd2cd4eb40774bad1446d6acf3349) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ad614dea62477b3f8893697e7388edb') in 0.015271 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Daisy6.fbx
-  artifactKey: Guid(ed9550d13323c0c428cdaa27dd78a5f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Daisy6.fbx using Guid(ed9550d13323c0c428cdaa27dd78a5f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de323d412365bfb6c28732e0c828e482') in 0.0165049 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_04.fbx
-  artifactKey: Guid(196c0cb2163ce4d498327555da44b7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_04.fbx using Guid(196c0cb2163ce4d498327555da44b7ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4aa44010b4ec8805e68018f3a3f571ea') in 0.0163038 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_ball_shape_01.fbx
-  artifactKey: Guid(bd40c5375e14d984296a74afe6e77d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_ball_shape_01.fbx using Guid(bd40c5375e14d984296a74afe6e77d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac919e1d1e298d5e9041f227375559c4') in 0.0176427 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_07.fbx
-  artifactKey: Guid(485dc53afb7cf1e44a9ac78588bb61aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_07.fbx using Guid(485dc53afb7cf1e44a9ac78588bb61aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '086386ea63ea1fd766dad613b5bf5951') in 0.0184972 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Cup_07.fbx
-  artifactKey: Guid(d693b2f23ab8529478f51c6b11c80a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Cup_07.fbx using Guid(d693b2f23ab8529478f51c6b11c80a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94e07dc6d401d8f7260148996c159c9c') in 0.0164063 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_05.fbx
-  artifactKey: Guid(115f2acfc247d844a9195c325dae2897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_05.fbx using Guid(115f2acfc247d844a9195c325dae2897) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f53e3b60c7b2e0279cf97b2b3256be73') in 0.018435 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_04.fbx
-  artifactKey: Guid(690ee7a8f44826b4fb4f655453a16808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_04.fbx using Guid(690ee7a8f44826b4fb4f655453a16808) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abc897eaf0969829d855df3a0247db77') in 0.0184365 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_02.fbx
-  artifactKey: Guid(cb50c3d46dab61642a7e3321c81f6d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_02.fbx using Guid(cb50c3d46dab61642a7e3321c81f6d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53f63a14e845431485b1b92fbbbc85ad') in 0.0154121 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_06.fbx
-  artifactKey: Guid(70d2031a68516c849ad1f4e102b3cac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_plant_06.fbx using Guid(70d2031a68516c849ad1f4e102b3cac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '475a7b3970d5d201b824b75f51dcde79') in 0.0182248 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_01.fbx
-  artifactKey: Guid(a33c31998b8354e49aa9c337165d82cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Grass_leaves_01.fbx using Guid(a33c31998b8354e49aa9c337165d82cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5666b62449d546fff98065e907294d70') in 0.0174385 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Rectangular_shape_03.fbx
-  artifactKey: Guid(cf2cec0a8085fd149bfdf1b32dd4db8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Flower_Rectangular_shape_03.fbx using Guid(cf2cec0a8085fd149bfdf1b32dd4db8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51f5fd3e781a00394c6311d34d1554ee') in 0.0175499 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Daisy4.fbx
-  artifactKey: Guid(6bca0d9b5b6c9534aa13c3285262633a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Daisy4.fbx using Guid(6bca0d9b5b6c9534aa13c3285262633a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '860c76a60fd2363a74cc2beb4572a653') in 0.017103 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_grass_01.fbx
-  artifactKey: Guid(ed6a44b4a7ebfc144b4a5433460b9785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_grass_01.fbx using Guid(ed6a44b4a7ebfc144b4a5433460b9785) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02854de0fd017828916795690d5c3ae1') in 0.0185306 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.919614 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Lilies_04.fbx
-  artifactKey: Guid(c8fd39458e1caa24797a4a37fd7e57f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Lilies_04.fbx using Guid(c8fd39458e1caa24797a4a37fd7e57f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b213917feec6bd7a08352b63232c6a7') in 0.0174712 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Lilies_07.fbx
-  artifactKey: Guid(889bfc3110f328442b39afd965f4116c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Grass And Flowers/Grass_And_Flowers_Lilies_07.fbx using Guid(889bfc3110f328442b39afd965f4116c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a16bdaa59383fa533e846ad79722a7e8') in 0.0184002 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_04.fbx
-  artifactKey: Guid(8f93297d7f39aea45a882c4d46919ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_04.fbx using Guid(8f93297d7f39aea45a882c4d46919ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fbede7d05ad2f801a1419f9401f8c81') in 0.0174969 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_04.fbx
-  artifactKey: Guid(c1fe8ba8158e58046b9ba7c1e9e03285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_04.fbx using Guid(c1fe8ba8158e58046b9ba7c1e9e03285) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '915f9397dff8de0515a6c139ec99f4d7') in 0.0171304 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_06.fbx
-  artifactKey: Guid(291b57e2fa421b24d92173848b1807ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_06.fbx using Guid(291b57e2fa421b24d92173848b1807ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0226f6537a7f899abf9d50c874c73ca') in 0.0172147 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_05.fbx
-  artifactKey: Guid(2f2106793f7ccc7469626604db139a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_05.fbx using Guid(2f2106793f7ccc7469626604db139a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6afec0292ec3b23e94675ea74b13413d') in 0.01621 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_01.fbx
-  artifactKey: Guid(7409aed82f276fb42913696426742964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_01.fbx using Guid(7409aed82f276fb42913696426742964) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bde7d750ffde84367a364afdacb706ba') in 0.0175053 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/TestObjects/MockUpVulcano.fbx
-  artifactKey: Guid(f9144511e7f474545a967650cafec649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TestObjects/MockUpVulcano.fbx using Guid(f9144511e7f474545a967650cafec649) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ee4ab55e502eb00f49a048e038e44be') in 0.0244838 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_05.fbx
-  artifactKey: Guid(3986e62155ab8354680a2ba186099a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_05.fbx using Guid(3986e62155ab8354680a2ba186099a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03708f41d0c4ca5358a4715f26403fdd') in 0.0162548 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_01.fbx
-  artifactKey: Guid(6290560c974742b488c9bdc22df07232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_01.fbx using Guid(6290560c974742b488c9bdc22df07232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a063f36ed5e5747597baf52d3a2567f1') in 0.0162231 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.452560 seconds.
-  path: Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_09.fbx
-  artifactKey: Guid(023e6763076c7bf48aaf87676c7926dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_09.fbx using Guid(023e6763076c7bf48aaf87676c7926dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbfcf017cc7ae531b5c80112e1342026') in 0.0184924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_03.fbx
-  artifactKey: Guid(97e378245020bd444a24a3f755c27daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_03.fbx using Guid(97e378245020bd444a24a3f755c27daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c51e873176a9a1816a01426f02bb92b7') in 0.0167987 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_12.fbx
-  artifactKey: Guid(1003c747f13521e488d909c50e6e508b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_12.fbx using Guid(1003c747f13521e488d909c50e6e508b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '506ab157ef6c8ebb88f8dae1f0786a00') in 0.0165284 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_18.fbx
-  artifactKey: Guid(9a9331ba475bf9d4ebdee76117828db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_18.fbx using Guid(9a9331ba475bf9d4ebdee76117828db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97d09ce3de67f7cc54f43ded0278f651') in 0.0171064 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_06.fbx
-  artifactKey: Guid(56fbcd8613d2bac44a87d0a0e6f4f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_06.fbx using Guid(56fbcd8613d2bac44a87d0a0e6f4f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05f7e235b8079824af2e860c7fffc84b') in 0.0180413 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_10.fbx
-  artifactKey: Guid(98848596886a3a54b91afd18b16259fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mushrooms/Mushroom_Mushroom_10.fbx using Guid(98848596886a3a54b91afd18b16259fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76a7abcbb7caff1d28a9d67c3256f32c') in 0.0171441 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_05.fbx
-  artifactKey: Guid(db503a44d7c4be144a47ac91c3cd59c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_05.fbx using Guid(db503a44d7c4be144a47ac91c3cd59c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac19aa818a7b0a3087fce18ac7d0724b') in 0.0180183 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_09.fbx
-  artifactKey: Guid(d226744f46115f44797680919c80f4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_09.fbx using Guid(d226744f46115f44797680919c80f4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b580835d88d2e0678ab11dc4d0a2029') in 0.016927 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_02.fbx
-  artifactKey: Guid(3733727186dd60544adad0311f2511bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_02.fbx using Guid(3733727186dd60544adad0311f2511bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13c8980d97102e5d614a52854f0a0bcd') in 0.0174051 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_15.fbx
-  artifactKey: Guid(8a95a48afa49589408bb7f1f9549ea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_15.fbx using Guid(8a95a48afa49589408bb7f1f9549ea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8dba56548c240f78253ca955c34e57d9') in 0.0158699 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_04.fbx
-  artifactKey: Guid(7044546a49f146448a0710c216b496e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_04.fbx using Guid(7044546a49f146448a0710c216b496e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '252bc389b0ea100acb8924c844d3a55b') in 0.0174751 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 47.179933 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15be5ba4d5b2b3ffcc56475d7901d8b3') in 0.0040033 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Tree_TxT.png
-  artifactKey: Guid(89b0d1af3e1f4134d9006d273477eabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree_TxT.png using Guid(89b0d1af3e1f4134d9006d273477eabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0856dd85b3a82f7f2dbe8e26b0a314b') in 0.0178994 seconds
+  Time since last request: 6395.424007 seconds.
+  path: Assets/Rocky Assets/Textures/Water_Base_color.png
+  artifactKey: Guid(694c6d2c45ad7084790e77aa2c82d36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Water_Base_color.png using Guid(694c6d2c45ad7084790e77aa2c82d36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aea16b73a7eed0d17dc70c9eeecfd129') in 0.0407023 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 

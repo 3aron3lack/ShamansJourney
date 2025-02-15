@@ -8724,6 +8724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118443115}
   - component: {fileID: 2118443116}
+  - component: {fileID: 2118443117}
   m_Layer: 0
   m_Name: AmbientMusic
   m_TagString: Untagged
@@ -8756,8 +8757,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 04e135135a723ba4ab8750261f5bcbf5, type: 2}
-  m_audioClip: {fileID: 8300000, guid: b287b898c450a8d41ad51e69632ef27b, type: 3}
-  m_Resource: {fileID: 8300000, guid: b287b898c450a8d41ad51e69632ef27b, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8843,6 +8844,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2118443117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118443114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fb3c0324505ec4d8a63bb2e29bd5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstClip: {fileID: 8300000, guid: b287b898c450a8d41ad51e69632ef27b, type: 3}
+  secondClip: {fileID: 8300000, guid: cf77057b0372f664580fcc066db9a8b9, type: 3}
 --- !u!1001 &991760916244323236
 PrefabInstance:
   m_ObjectHideFlags: 0

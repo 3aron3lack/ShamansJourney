@@ -5,7 +5,10 @@ public class RhythmInteraction : MonoBehaviour
 {
     private RhythmMaterialLerp rhythmMaterialLerp;
 
+    [Header("Events")]
+
     [SerializeField] private UnityEvent OnInteractionEnd;
+    [SerializeField] private UnityEvent OnBeat;
 
     [Header("Audio Settings")]
     
@@ -92,6 +95,7 @@ public class RhythmInteraction : MonoBehaviour
         //    Debug.Log("playerInputCount is: " + playerInputCount);
         //}
 
+
         // -- New Method --
 
         if(playerDrums.drumCounter == true)
@@ -156,6 +160,7 @@ public class RhythmInteraction : MonoBehaviour
             //Debug.Log("rhytmTimer is: " + rhythmTimer);
             if(rhythmTimer > timeBetweenBeat[currentTBB])
             {
+                OnBeat.Invoke();
                 audioSource.PlayOneShot(rhythmClip);
                 rhythmTimer = 0;
                 //Debug.Log("rhytmTimer reset");

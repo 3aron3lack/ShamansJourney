@@ -1,10 +1,14 @@
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject optionsMenu;
+
+    [SerializeField] string nextScene;
 
     private bool inMenu = false;
     private bool inOptions = false;
@@ -51,15 +55,16 @@ public class PauseMenu : MonoBehaviour
     {
         //pauseMenu.SetActive(false);
         Debug.Log("Exit to Main Menu will be added later");
+        //SceneManager.LoadScene(sceneName: nextScene);
 
         Time.timeScale = 0f;
     }
     public void ExitDesktop()
     {
-        //pauseMenu.SetActive(false);
-        Debug.Log("Exit to Desktop will be added later");
-
-        Time.timeScale = 0f;
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
     }
 
     

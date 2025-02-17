@@ -16,14 +16,31 @@ public class AudioOptionsMenu : MonoBehaviour
     public void OnMusicSlider(float musicVolume)
     {
         musicMixer.SetFloat("Volume", Mathf.Log10(musicVolume) * 20);
+        AudioMixerVolumeOptions.musicVolume = musicVolume;
     }
     public void OnAmbientSlider(float ambientVolume)
     {
         ambientMixer.SetFloat("Volume", Mathf.Log10(ambientVolume) * 20);
+        AudioMixerVolumeOptions.ambientVolume = ambientVolume;
     }
     public void OnSoundSlider(float soundVolume)
     {
         soundMixer.SetFloat("Volume", Mathf.Log10(soundVolume) * 20);
+        AudioMixerVolumeOptions.soundVolume = soundVolume;
     }
+
+    //public void OnMusicSlider(float musicVolume)
+    //{
+    //    musicMixer.SetFloat("Volume", Mathf.Log10(musicVolume) * 20);
+    //}
+    //public void OnAmbientSlider(float ambientVolume)
+    //{
+    //    ambientMixer.SetFloat("Volume", Mathf.Log10(ambientVolume) * 20);
+    //}
+    //public void OnSoundSlider(float soundVolume)
+    //{
+    //    soundMixer.SetFloat("Volume", Mathf.Log10(soundVolume) * 20);
+    //}
+
 
 }

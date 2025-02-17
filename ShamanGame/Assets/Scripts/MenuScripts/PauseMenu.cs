@@ -9,20 +9,25 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] GameObject optionsMenu;
 
     [SerializeField] string nextScene;
+    [SerializeField] bool isMainMenu;
 
     private bool inMenu = false;
     private bool inOptions = false;
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !inMenu)
+        if(!isMainMenu)
         {
-            Pause();
+            if (Input.GetKeyDown(KeyCode.Escape) && !inMenu)
+            {
+                Pause();
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && inMenu)
+            {
+                Resume();
+            }
         }
-        else if(Input.GetKeyDown(KeyCode.Escape) && inMenu)
-        {
-            Resume();
-        }
+        
     }
 
     public void Pause()
@@ -32,7 +37,6 @@ public class PauseMenu : MonoBehaviour
             optionsMenu.SetActive(false);
             inOptions = false;
         }
-
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         inMenu = true;
@@ -52,12 +56,11 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
     }
     public void ExitMainMenu()
-    {
-        //pauseMenu.SetActive(false);
+    {        
         Debug.Log("Exit to Main Menu will be added later");
-        //SceneManager.LoadScene(sceneName: nextScene);
-
-        Time.timeScale = 0f;
+        SceneManager.LoadScene(sceneName: nextScene);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
     public void ExitDesktop()
     {

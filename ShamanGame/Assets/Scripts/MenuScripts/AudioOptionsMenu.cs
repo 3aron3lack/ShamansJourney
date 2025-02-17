@@ -13,6 +13,8 @@ public class AudioOptionsMenu : MonoBehaviour
         
     }
 
+
+    // -- BUG: When changing scene the volume is correctly changed, but the slide position not. --
     public void OnMusicSlider(float musicVolume)
     {
         musicMixer.SetFloat("Volume", Mathf.Log10(musicVolume) * 20);

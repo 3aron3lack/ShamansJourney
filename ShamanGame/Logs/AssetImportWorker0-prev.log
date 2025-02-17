@@ -15,7 +15,7 @@ C:/Users/GBT B760M DS3H/Documents/ShamansJourney/ShamanGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64715
+64500
 -job-worker-count
 15
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/GBT B760M DS3H/Documents/ShamansJourney/ShamanGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15924]  Target information:
+Player connection [13476]  Target information:
 
-Player connection [15924]  * "[IP] 10.158.72.229 [Port] 0 [Flags] 2 [Guid] 2397132771 [EditorId] 2397132771 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RO2PPIV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [13476]  * "[IP] 10.158.72.229 [Port] 0 [Flags] 2 [Guid] 3725110764 [EditorId] 3725110764 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RO2PPIV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [15924] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [15924] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13476] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13476] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 15
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,8 +75,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.49 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.65 ms.
+Refreshing native plugins compatible for Editor in 2.76 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.57 ms.
 Initialize engine version: 6000.0.24f1 (11fa355cd605)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/GBT B760M DS3H/Documents/ShamansJourney/ShamanGame/Assets
@@ -91,16 +91,16 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001404 seconds.
+Registered in 0.001735 seconds.
 - Loaded All Assemblies, in  0.218 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.187 seconds
-Domain Reload Profiling: 405ms
+- Finished resetting the current domain, in  0.182 seconds
+Domain Reload Profiling: 398ms
 	BeginReloadAssembly (75ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
@@ -113,22 +113,22 @@ Domain Reload Profiling: 405ms
 	LoadAllAssembliesAndSetupDomain (87ms)
 		LoadAssemblies (74ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (86ms)
-			TypeCache.Refresh (85ms)
-				TypeCache.ScanAssembly (77ms)
+		AnalyzeDomain (85ms)
+			TypeCache.Refresh (84ms)
+				TypeCache.ScanAssembly (76ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (188ms)
+	FinalizeReload (182ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (162ms)
+		SetupLoadedEditorAssemblies (155ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (2ms)
+			SetLoadedEditorAssemblies (3ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (107ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (101ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -136,56 +136,128 @@ Domain Reload Profiling: 405ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.585 seconds
-Refreshing native plugins compatible for Editor in 1.82 ms, found 9 plugins.
+- Loaded All Assemblies, in  0.608 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.513 seconds
-Domain Reload Profiling: 1096ms
-	BeginReloadAssembly (212ms)
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 1133ms
+	BeginReloadAssembly (221ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (18ms)
 	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (6ms)
+	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (322ms)
-		LoadAssemblies (204ms)
+	LoadAllAssembliesAndSetupDomain (335ms)
+		LoadAssemblies (220ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (173ms)
-			TypeCache.Refresh (109ms)
-				TypeCache.ScanAssembly (98ms)
-			BuildScriptInfoCaches (54ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (513ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (112ms)
+				TypeCache.ScanAssembly (101ms)
+			BuildScriptInfoCaches (50ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (528ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (367ms)
+		SetupLoadedEditorAssemblies (377ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (1ms)
 			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (274ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.54 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
+Refreshing native plugins compatible for Editor in 1.63 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Unloading 232 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6726 unused Assets / (5.3 MB). Loaded Objects now: 7506.
-Memory consumption went from 210.0 MB to 204.7 MB.
-Total: 5.916700 ms (FindLiveObjects: 0.436900 ms CreateObjectMapping: 0.230100 ms MarkObjects: 3.440300 ms  DeleteObjects: 1.808800 ms)
+Memory consumption went from 209.9 MB to 204.5 MB.
+Total: 5.610700 ms (FindLiveObjects: 0.422200 ms CreateObjectMapping: 0.246700 ms MarkObjects: 3.354200 ms  DeleteObjects: 1.587100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6395.424007 seconds.
-  path: Assets/Rocky Assets/Textures/Water_Base_color.png
-  artifactKey: Guid(694c6d2c45ad7084790e77aa2c82d36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Textures/Water_Base_color.png using Guid(694c6d2c45ad7084790e77aa2c82d36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aea16b73a7eed0d17dc70c9eeecfd129') in 0.0407023 seconds
+  Time since last request: 208306.872105 seconds.
+  path: Assets/SKYBOX.fbx
+  artifactKey: Guid(119429e3e41183b40bf7814beb7fe454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SKYBOX.fbx using Guid(119429e3e41183b40bf7814beb7fe454) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f0152d45b454efb8b1aa2e1f9b5d91d') in 0.2922779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.030499 seconds.
+  path: Assets/Rocky Assets/Textures/Mountains02/Mountain 02.mat
+  artifactKey: Guid(b96c4947a3d61f34b9f6005dde7e1ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Mountains02/Mountain 02.mat using Guid(b96c4947a3d61f34b9f6005dde7e1ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '541e47d7e5019d0315f19f5e422b44c2') in 0.0160635 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.764837 seconds.
+  path: Assets/Rocky Assets/Textures/Rock Pack 02/Rcok 02.mat
+  artifactKey: Guid(878e981f43655c04b80d32d938862bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Rock Pack 02/Rcok 02.mat using Guid(878e981f43655c04b80d32d938862bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce97541d639d46f995098deaae771bfc') in 0.0153347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.156897 seconds.
+  path: Assets/Skybox.mat
+  artifactKey: Guid(3c0acbfdf196d2845b02be204610ea38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox.mat using Guid(3c0acbfdf196d2845b02be204610ea38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d0badbd635465911bb0669992b5c17a') in 1.6512187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.426319 seconds.
+  path: Assets/Rocky Assets/Textures/Water/Water.mat
+  artifactKey: Guid(f49426a1dc84da0478300cedfab3c54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Water/Water.mat using Guid(f49426a1dc84da0478300cedfab3c54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71674130116da0543100fc9401ec3eda') in 0.0158175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.690110 seconds.
+  path: Assets/SKYBOX.png
+  artifactKey: Guid(056b13d0f6af44648a6ac8ff543f5369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SKYBOX.png using Guid(056b13d0f6af44648a6ac8ff543f5369) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b34b39586cdce67073181ef2a5047c29') in 0.0410671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.353128 seconds.
+  path: Assets/Rocky Assets/Textures/Magical tree/Magical tree.mat
+  artifactKey: Guid(bbdcdb84eeb0f9b448eb99c84941abed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Magical tree/Magical tree.mat using Guid(bbdcdb84eeb0f9b448eb99c84941abed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e32df12cd8b527facf81c7499f84b75') in 0.0126688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 401.551683 seconds.
+  path: Assets/Rocky Assets/Textures/Bridge/Bridge.mat
+  artifactKey: Guid(014c7747cd2ec284b90255e90b07f7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Bridge/Bridge.mat using Guid(014c7747cd2ec284b90255e90b07f7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c49a0206ec55a906553da582c95ad75') in 0.020699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 449.983804 seconds.
+  path: Assets/Rocky Assets/Textures/Mountains02/Materials/Big_Mountain02_Base_color.mat
+  artifactKey: Guid(1dabdfae54543d741a4982c7cdc4735d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Mountains02/Materials/Big_Mountain02_Base_color.mat using Guid(1dabdfae54543d741a4982c7cdc4735d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a763fe54d07003eb5990737edd7ab8fb') in 0.0449952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 8864.376399 seconds.
+  path: Assets/Rocky Assets/Textures/Stump/Mountan_Normal_OpenGL.png
+  artifactKey: Guid(0e280a057984b6347a027d6a3da30fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocky Assets/Textures/Stump/Mountan_Normal_OpenGL.png using Guid(0e280a057984b6347a027d6a3da30fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed912e63e9010b0cc80c13f696976443') in 0.0131449 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 

@@ -83,6 +83,7 @@ public class StartDialogue : MonoBehaviour
 
         dialogBehaviour.StartDialog(dialogGraphs[currentGraph]);
 
+        Cursor.visible = true;
         //ChangeDialogGraph();
 
 

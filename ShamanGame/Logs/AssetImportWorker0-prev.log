@@ -15,7 +15,7 @@ D:/Master Animation & Game/1. Semester/Creative-Technical Research 1/ShamansJour
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51255
+49718
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/Master Animation & Game/1. Semester/Creative-Technical Research 1/ShamansJour
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24756]  Target information:
+Player connection [11840]  Target information:
 
-Player connection [24756]  * "[IP] 192.168.178.24 [Port] 0 [Flags] 2 [Guid] 1324323712 [EditorId] 1324323712 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ASAVIC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [11840]  * "[IP] 192.168.178.24 [Port] 0 [Flags] 2 [Guid] 1725810741 [EditorId] 1725810741 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ASAVIC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24756] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24756] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11840] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [11840] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,8 +75,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.70 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.97 ms.
+Refreshing native plugins compatible for Editor in 329.21 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 77.03 ms.
 Initialize engine version: 6000.0.24f1 (11fa355cd605)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Master Animation & Game/1. Semester/Creative-Technical Research 1/ShamansJourney/ShamanGame/Assets
@@ -91,44 +91,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56868
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004457 seconds.
-- Loaded All Assemblies, in  0.555 seconds
+Registered in 0.005721 seconds.
+- Loaded All Assemblies, in  0.591 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.482 seconds
-Domain Reload Profiling: 1033ms
-	BeginReloadAssembly (188ms)
+- Finished resetting the current domain, in  0.475 seconds
+Domain Reload Profiling: 1062ms
+	BeginReloadAssembly (258ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (214ms)
-		LoadAssemblies (183ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (203ms)
+		LoadAssemblies (253ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (209ms)
-			TypeCache.Refresh (207ms)
-				TypeCache.ScanAssembly (183ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (199ms)
+				TypeCache.ScanAssembly (176ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (483ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (475ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (429ms)
+		SetupLoadedEditorAssemblies (420ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (34ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (5ms)
 			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (265ms)
+			ProcessInitializeOnLoadAttributes (261ms)
 			ProcessInitializeOnLoadMethodAttributes (110ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -136,264 +136,1486 @@ Domain Reload Profiling: 1033ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.901 seconds
-Refreshing native plugins compatible for Editor in 4.60 ms, found 10 plugins.
+- Loaded All Assemblies, in  3.299 seconds
+Refreshing native plugins compatible for Editor in 3.37 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.929 seconds
-Domain Reload Profiling: 4827ms
-	BeginReloadAssembly (911ms)
+- Finished resetting the current domain, in  2.233 seconds
+Domain Reload Profiling: 5526ms
+	BeginReloadAssembly (884ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (875ms)
-		LoadAssemblies (520ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (2294ms)
+		LoadAssemblies (2042ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (483ms)
-			TypeCache.Refresh (311ms)
-				TypeCache.ScanAssembly (287ms)
-			BuildScriptInfoCaches (150ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (2930ms)
+		AnalyzeDomain (388ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (206ms)
+			BuildScriptInfoCaches (133ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2233ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1775ms)
+		SetupLoadedEditorAssemblies (1424ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (818ms)
-			ProcessInitializeOnLoadMethodAttributes (822ms)
-			AfterProcessingInitializeOnLoad (18ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (744ms)
+			ProcessInitializeOnLoadMethodAttributes (556ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 4.61 ms, found 10 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.41 ms, found 10 plugins.
 Preloading 1 native plugins for Editor in 0.04 ms.
 Unloading 247 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7139 unused Assets / (6.0 MB). Loaded Objects now: 7941.
-Memory consumption went from 213.9 MB to 207.8 MB.
-Total: 16.362200 ms (FindLiveObjects: 1.164500 ms CreateObjectMapping: 0.611100 ms MarkObjects: 9.020500 ms  DeleteObjects: 5.563100 ms)
+Unloading 7143 unused Assets / (5.4 MB). Loaded Objects now: 7945.
+Memory consumption went from 215.8 MB to 210.3 MB.
+Total: 11.649300 ms (FindLiveObjects: 1.085200 ms CreateObjectMapping: 0.386900 ms MarkObjects: 7.086300 ms  DeleteObjects: 3.089300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 62603.506278 seconds.
-  path: Assets/Scenes/TestScene_Mechanics.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TestScene_Mechanics.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '679d836130b631f7f715aefca88e9448') in 0.0283482 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 168119.753706 seconds.
+  path: Assets/TestObjects/TestDrumTarget.prefab
+  artifactKey: Guid(95e7340933046ac43bb37af4e68e65d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestObjects/TestDrumTarget.prefab using Guid(95e7340933046ac43bb37af4e68e65d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '942c73b363a02b0eef01ec5e6ee530bb') in 0.5211277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.813506 seconds.
-  path: Assets/Sounds/Footsteps - Essentials
-  artifactKey: Guid(ad10d43692ad3fb42a75285f814d25b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Footsteps - Essentials using Guid(ad10d43692ad3fb42a75285f814d25b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '267ab3d0862c22368d5e4f818073e175') in 0.000868 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 24.652990 seconds.
+  path: Assets/GamePrefabs/Kinsi_Encounter.prefab
+  artifactKey: Guid(20a0963cd74197e4192f1f07b19056a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GamePrefabs/Kinsi_Encounter.prefab using Guid(20a0963cd74197e4192f1f07b19056a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Refreshing native plugins compatible for Editor in 4.24 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+ -> (artifact id: '82a29e275aebaac617e20d0d2cb689dc') in 0.2667076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 307
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.536588 seconds.
-  path: Assets/Sounds/Footsteps - Essentials/Footsteps_Grass
-  artifactKey: Guid(c7e1aea36816af7498177440946a1d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Footsteps - Essentials/Footsteps_Grass using Guid(c7e1aea36816af7498177440946a1d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b848e05e6f6480167e5848614a03827') in 0.0006611 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 2.427308 seconds.
+  path: Assets/GamePrefabs/Player.prefab
+  artifactKey: Guid(278fa66dfc9168542a174d1c54e6a7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GamePrefabs/Player.prefab using Guid(278fa66dfc9168542a174d1c54e6a7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)face avani neutral is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+head avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+right hand is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+left hand is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+bones dress is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+bones arms is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+drum decoration is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+drum is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+necklace avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+skirt decoration is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+torso avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+feet avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+staff is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+saddle is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - front low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - front mid is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - front up is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof back - front is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof front - front is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - front low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - front up is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+eye tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+head tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+neck tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+torso tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+tail is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof back - back is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - back up is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - back mid is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - back low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - back is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof front - back is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - back low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+face avani neutral is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+head avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+right hand is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+left hand is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+bones dress is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+bones arms is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+drum decoration is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+drum is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+necklace avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+skirt decoration is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+torso avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+feet avani is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+staff is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+saddle is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - front low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - front mid is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - front up is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof back - front is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof front - front is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - front low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - front up is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+eye tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+head tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+neck tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+torso tahir is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+tail is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof back - back is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - back up is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - back mid is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+back leg - back low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - back is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+hoof front - back is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+front leg - back low is using a shader without GPU deformation support. Switching the renderer over to CPU deformation.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+UnityEngine.U2D.Animation.DeformationManager:AddSpriteSkin (UnityEngine.U2D.Animation.SpriteSkin) (at ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs:172)
+UnityEngine.U2D.Animation.SpriteSkin:OnEnable () (at ./Library/PackageCache/com.unity.2d.animation/Runtime/SpriteSkin.cs:381)
+UnityEngine.SceneManagement.SceneManager:MoveGameObjectToScene (UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)
+UnityEditor.PreviewScene:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.PreviewRenderUtility:AddManagedGO (UnityEngine.GameObject)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.2d.animation/Runtime/BatchedDeformation/DeformationManager.cs Line: 172)
+
+Refreshing native plugins compatible for Editor in 4.10 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+ -> (artifact id: '4e1694c72b32e805cd17741f69badeea') in 0.2171745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 507
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.492672 seconds.
-  path: Assets/Sounds/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk
-  artifactKey: Guid(ddae677a827bc8c498f5a64298c72be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk using Guid(ddae677a827bc8c498f5a64298c72be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a7856107b57c9d5c278ac2b55bc9ee2') in 0.0006139 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 20.070292 seconds.
+  path: Assets/GamePrefabs/CameraTriggerZone.prefab
+  artifactKey: Guid(6896730ef341b28438f9a06f616f7862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GamePrefabs/CameraTriggerZone.prefab using Guid(6896730ef341b28438f9a06f616f7862) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8214fcc643c65d308fcc533fc34bab18') in 0.0118832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.131759 seconds.
-  path: Assets/Sounds/Footsteps - Essentials/Footsteps_Rock
-  artifactKey: Guid(ce43c2faff5be2d408bb13797d8f4631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Footsteps - Essentials/Footsteps_Rock using Guid(ce43c2faff5be2d408bb13797d8f4631) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '973828a217ffc7c7e3d271d1ea2cb12c') in 0.0008103 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 8.248805 seconds.
+  path: Assets/GamePrefabs/CameraCenterObject.prefab
+  artifactKey: Guid(24195f7e787defc4ab8b24b3f2c4a195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GamePrefabs/CameraCenterObject.prefab using Guid(24195f7e787defc4ab8b24b3f2c4a195) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fab014a2191af4784896a05dc6ac96e') in 0.002942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.591010 seconds.
-  path: Assets/Sounds/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk
-  artifactKey: Guid(7b0df4b7e501e914282832ec027f653b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk using Guid(7b0df4b7e501e914282832ec027f653b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20c8b8b75202384693a8231645c78500') in 0.0006446 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 24.658280 seconds.
+  path: Assets/GamePrefabs/BackgroundSoundManager.prefab
+  artifactKey: Guid(574b52faf088da542b0e0d5a81296efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GamePrefabs/BackgroundSoundManager.prefab using Guid(574b52faf088da542b0e0d5a81296efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '986e85ea7ededdef445703570f62a279') in 0.0306639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
 
-========================================================================
-Received Import Request.
-  Time since last request: 71.445233 seconds.
-  path: Assets/Rocky Assets/Meshes
-  artifactKey: Guid(04a1f9dc0e1266e448698b21ac1f6e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes using Guid(04a1f9dc0e1266e448698b21ac1f6e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76811a9eed51eb52a78c9934f6401c9c') in 0.0007084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.760543 seconds.
-  path: Assets/Rocky Assets/Meshes/Bridge.fbx
-  artifactKey: Guid(1b1d2869f30fafc48be70ae9f1d8c898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Bridge.fbx using Guid(1b1d2869f30fafc48be70ae9f1d8c898) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd23e45891ef78f01e91dc9e1e76b3fdb') in 0.6647427 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.543503 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_03.fbx
-  artifactKey: Guid(1cac25599a05b8147b7882e13b19f15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_03.fbx using Guid(1cac25599a05b8147b7882e13b19f15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfacfd27c735cab85bb2f2080e61547b') in 0.027991 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.820039 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_05.fbx
-  artifactKey: Guid(2f2106793f7ccc7469626604db139a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_05.fbx using Guid(2f2106793f7ccc7469626604db139a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc2a15f71f4aa6af26d5e81f909029df') in 0.0406084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.771698 seconds.
-  path: Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_06.fbx
-  artifactKey: Guid(291b57e2fa421b24d92173848b1807ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Mountains/Mountain_Mounatin_06.fbx using Guid(291b57e2fa421b24d92173848b1807ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3541889612627f3b8edf47930e2ec84') in 0.0491145 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.606073 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '281b220e824ad72da4ce58f4fef3699a') in 0.001237 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.137121 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_06.fbx
-  artifactKey: Guid(56fbcd8613d2bac44a87d0a0e6f4f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_06.fbx using Guid(56fbcd8613d2bac44a87d0a0e6f4f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '324bf97e40d528e2abf9067a9b42700b') in 0.0705191 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.609414 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_04.fbx
-  artifactKey: Guid(7044546a49f146448a0710c216b496e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_04.fbx using Guid(7044546a49f146448a0710c216b496e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32eb153331bee9ae2e572971ebdfa4b0') in 0.0194014 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.568184 seconds.
-  path: Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_24.fbx
-  artifactKey: Guid(af457e076928a294b96af9035c565130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Rocky Assets/Meshes/Rocks/Rock_Rock_24.fbx using Guid(af457e076928a294b96af9035c565130) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1bf9eb846f8779e5a8c7440bca03d10e') in 0.0242326 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.910 seconds
-Refreshing native plugins compatible for Editor in 3.39 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.183 seconds
-Domain Reload Profiling: 2092ms
-	BeginReloadAssembly (260ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (550ms)
-		LoadAssemblies (370ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (289ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (254ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1184ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (854ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (670ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 3.84 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7138 unused Assets / (6.2 MB). Loaded Objects now: 8011.
-Memory consumption went from 183.0 MB to 176.8 MB.
-Total: 16.431900 ms (FindLiveObjects: 1.272400 ms CreateObjectMapping: 0.607800 ms MarkObjects: 8.626500 ms  DeleteObjects: 5.923500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.903 seconds
-Refreshing native plugins compatible for Editor in 3.83 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.236 seconds
-Domain Reload Profiling: 2139ms
-	BeginReloadAssembly (244ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (569ms)
-		LoadAssemblies (393ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (295ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (267ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1236ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (874ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (96ms)
-			ProcessInitializeOnLoadAttributes (681ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 5.67 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7137 unused Assets / (5.8 MB). Loaded Objects now: 8013.
-Memory consumption went from 182.9 MB to 177.1 MB.
-Total: 13.826600 ms (FindLiveObjects: 1.219700 ms CreateObjectMapping: 0.994200 ms MarkObjects: 6.964100 ms  DeleteObjects: 4.646800 ms)
-
-Prepare: number of updated asset objects reloaded= 0

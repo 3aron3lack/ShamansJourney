@@ -14,6 +14,13 @@ public class PauseMenu : MonoBehaviour
     private bool inMenu = false;
     private bool inOptions = false;
 
+    private void Start()
+    {
+        if(!inMenu)
+        {
+            Cursor.visible = false;
+        }
+    }
     private void Update()
     {
         if(!isMainMenu)
@@ -37,6 +44,7 @@ public class PauseMenu : MonoBehaviour
             optionsMenu.SetActive(false);
             inOptions = false;
         }
+        Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         inMenu = true;
@@ -44,7 +52,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
-
+        Cursor.visible = false;
         Time.timeScale = 1f;
         inMenu = false;
     }

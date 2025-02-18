@@ -1,4 +1,5 @@
 using cherrydev;
+using System.Collections;
 using System.Xml.Serialization;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ public class StartDialogue : MonoBehaviour
     bool playerInVicinity = false;
     bool isDialogue = false;
 
+    bool switchToNew = true;
 
 
     private void Start()
@@ -40,6 +42,7 @@ public class StartDialogue : MonoBehaviour
         if (playerInVicinity && player.isInteracting && !playerEndCamera.inDialogue)
         {
             DialogInteraction();
+            dialogBehaviour.StartDialog(dialogGraphs[currentGraph]);
             //isDialogue = true;
         }
         
@@ -93,6 +96,9 @@ public class StartDialogue : MonoBehaviour
         //dialogBehaviour.BindExternalFunction("SwitchToTarget1", cameraDialogueFocus.SwitchToTarget);
         dialogBehaviour.BindExternalFunction("SwitchToTarget1", CameraToTarget);
 
+        dialogBehaviour.BindExternalFunction("Scold", ScoldKinsi);
+        dialogBehaviour.BindExternalFunction("Hug", HugKinsi);
+
         localDialogueCheck.InLocalDialogue();
     }
 
@@ -102,8 +108,36 @@ public class StartDialogue : MonoBehaviour
     //    playerEndCamera.newDialogue.SwitchToTarget();
     //    Debug.Log("Current dialogGraph 2 is: " + dialogGraph.name);
     //    Debug.Log("Current CameraDialogueFocus 2 is: " + cameraDialogueFocus.name);
-        
+
     //}
+
+    public void SwitchToLastDialogue()
+    {
+        if(switchToNew)
+        {
+            PlaySoundclip playSoundclip = GetComponent<PlaySoundclip>();
+            playSoundclip.PlayAudio();
+
+            StartCoroutine(dramaticPause());
+            
+            switchToNew = false;
+        }
+    }
+
+    IEnumerator dramaticPause()
+    {
+        yield return new WaitForSeconds(4);
+        DialogInteraction();
+    }
+    private void ScoldKinsi()
+    {
+        currentGraph = 1;
+
+    }
+    private void HugKinsi()
+    {
+        currentGraph = 2;
+    }
 
     private void CameraToTarget()
     {

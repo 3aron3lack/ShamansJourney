@@ -27,25 +27,37 @@ public class FadeBetweenAudioClips : MonoBehaviour
     void Update()
     {
         // --- Temporary for Testing ---
-        if(Input.GetKey(KeyCode.K))
-        {
-            //StartCoroutine(FirstFadeToSecondClip());
-            //isFirstClip = false;
+        //if(Input.GetKey(KeyCode.K))
+        //{
+        //    //StartCoroutine(FirstFadeToSecondClip());
+        //    //isFirstClip = false;
 
-            isSecondClip = true;
-        }
-        if(Input.GetKey(KeyCode.L)) 
-        {
-            //StartCoroutine(SecondFadeToFirstClip());
+        //    isSecondClip = true;
+        //}
+        //if(Input.GetKey(KeyCode.L)) 
+        //{
+        //    //StartCoroutine(SecondFadeToFirstClip());
 
-            isFirstClip = true;
+        //    isFirstClip = true;
 
-            //isSecondClip = false;         
-        }
+        //    //isSecondClip = false;         
+        //}
 
-        FirstClipPlay();
+        //FirstClipPlay();
+        //SecondClipPlay();
+
+    }
+
+    public void FadeToSecondTrack()
+    {
+        isSecondClip = true;
         SecondClipPlay();
+    }
 
+    public void FadeToFirstTrack()
+    {
+        isFirstClip = true;
+        FirstClipPlay();
     }
 
     void SecondClipPlay()

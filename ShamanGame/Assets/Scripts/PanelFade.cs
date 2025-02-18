@@ -23,19 +23,25 @@ public class PanelFade : MonoBehaviour
         panel.color = c;
     }
 
+    public void FadeToBlackAndBack()
+    {
+        doFade = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
         // -- Temporary for Testing --
-        if(Input.GetKeyUp(KeyCode.O))
-        {
-            Debug.Log(c.a);
-           doFade = true;
-        }
+        //if(Input.GetKeyUp(KeyCode.O))
+        //{
+        //    Debug.Log(c.a);
+        //   doFade = true;
+        //}
 
 
         if(doFade)
         {
+            panel.enabled = true;
             timer += Time.deltaTime;
             //Debug.Log(timer);
             c.a = Mathf.Lerp(0, 1, timer * fadeRate);
@@ -56,6 +62,7 @@ public class PanelFade : MonoBehaviour
             if(c.a <= 0f)
             {
                 timer = 0;
+                panel.enabled = false;
                 doFadeAgain = false;
             }
         }

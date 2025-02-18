@@ -40,7 +40,7 @@ public class RhythmInteraction : MonoBehaviour
     private float inactionTimer = 0;
 
     public float maxInactionTime = 0.2f;
-    public int currentInaction;
+    private int currentInaction;
 
     void Start()
     {
@@ -103,8 +103,10 @@ public class RhythmInteraction : MonoBehaviour
             if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= timeBetweenBeat[currentTBB] -  deviationBpm)
             {
                 rhythmMaterialLerp.LerpToEmissionCol();
+                //Debug.Log("Current deviation is: " + deviationBpm);
+                inactionTimer = 0;
                 playerInputCount++;
-               // Debug.Log("current time is: " + rhythmTimer);
+                Debug.Log("current time is: " + rhythmTimer);
 
                 if (playerInputCount >= rhythmInitLength)
                 {
@@ -181,11 +183,12 @@ public class RhythmInteraction : MonoBehaviour
                     currentInaction = 0;
                 }
 
-                Debug.Log("inactionTimer is: " + inactionTimer);
-                if (inactionTimer > timeBetweenBeat[currentInaction])
+                //Debug.Log("inactionTimer is: " + inactionTimer);
+                if (inactionTimer > timeBetweenBeat[currentInaction] + deviationBpm)
                 {
-                    inactionTimer = 0;
                     Debug.Log("inactionTimer reset");
+                    Debug.Log("inactionTimer is: " + inactionTimer);
+                    inactionTimer = 0;                    
                     playerInputCount = 0;
                     //Debug.Log("Max Inaction Time reached");
                 }

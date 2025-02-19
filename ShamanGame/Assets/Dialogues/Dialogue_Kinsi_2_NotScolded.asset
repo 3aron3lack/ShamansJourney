@@ -16,8 +16,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 858
-    y: 214
+    x: 1087
+    y: 102
     width: 190
     height: 135
   IsDragging: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 859
-    y: 355
+    x: 1088
+    y: 243
     width: 190
     height: 135
   IsDragging: 0
@@ -76,20 +76,20 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 83
-    y: 417
+    x: 312
+    y: 305
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Avani
-    Text: '"Oh my spiriits,'
+    Text: '"Oh my spirits, you''re bleeding? Honey, what''s wrong?"'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
+  ParentNode: {fileID: 7508738828724677307}
   ChildNode: {fileID: 5433688389531524608}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: SwitchToPlayer
 --- !u!114 &-5431865483155456990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,19 +106,19 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -565
-    y: 263
+    x: -336
+    y: 151
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Kinsi
     Text: '"Oh... *cough* mom, I don''t feel so good..."'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
-  ChildNode: {fileID: 0}
-  _isExternalFunc: 0
+  ParentNode: {fileID: 5729322147968084521}
+  ChildNode: {fileID: -152576675531248207}
+  _isExternalFunc: 1
   _externalFunctionName: 
 --- !u!114 &-5397050405398401822
 MonoBehaviour:
@@ -136,8 +136,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 603
-    y: 215
+    x: 832
+    y: 103
     width: 190
     height: 155
   IsDragging: 0
@@ -151,6 +151,36 @@ MonoBehaviour:
   - {fileID: -1670009085794223295}
   - {fileID: -7694008719501720380}
   - {fileID: -7361699237972142901}
+--- !u!114 &-4233481347739105269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  ConnectedNodesList: []
+  NodeGraph: {fileID: 11400000}
+  Rect:
+    serializedVersion: 2
+    x: 631
+    y: 398
+    width: 190
+    height: 135
+  IsDragging: 0
+  IsSelected: 0
+  _sentence:
+    CharacterName: 
+    Text: 
+    CharacterSprite: {fileID: 0}
+  ParentNode: {fileID: 0}
+  ChildNode: {fileID: 0}
+  _isExternalFunc: 0
+  _externalFunctionName: 
 --- !u!114 &-1670009085794223295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,8 +197,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 855
-    y: 77
+    x: 1084
+    y: -35
     width: 190
     height: 135
   IsDragging: 0
@@ -197,8 +227,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -357
-    y: 259
+    x: -128
+    y: 147
     width: 190
     height: 135
   IsDragging: 0
@@ -207,8 +237,8 @@ MonoBehaviour:
     CharacterName: Kinsi
     Text: '"I think... *cough*... my nose is bleeding again..."'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
-  ChildNode: {fileID: 0}
+  ParentNode: {fileID: -5431865483155456990}
+  ChildNode: {fileID: 7508738828724677307}
   _isExternalFunc: 0
   _externalFunctionName: 
 --- !u!114 &11400000
@@ -236,6 +266,7 @@ MonoBehaviour:
   - {fileID: -1670009085794223295}
   - {fileID: -7694008719501720380}
   - {fileID: -7361699237972142901}
+  - {fileID: -4233481347739105269}
   NodeToDrawLineFrom: {fileID: 0}
   LinePosition: {x: 0, y: 0}
 --- !u!114 &979298796106597797
@@ -254,20 +285,21 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 96
-    y: 88
+    x: 325
+    y: -24
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Avani
-    Text: '"You just caught a cold in the forest. Let''s go now."'
+    Text: '"Oh dear, drink this. It will make you feel better. May the spirits be
+      with us to help you home..."'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
+  ParentNode: {fileID: 7508738828724677307}
   ChildNode: {fileID: 5433688389531524608}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: SwitchToPlayer
 --- !u!114 &5433688389531524608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,8 +316,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 372
-    y: 223
+    x: 601
+    y: 111
     width: 190
     height: 135
   IsDragging: 0
@@ -314,10 +346,10 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -772
-    y: 268
+    x: -543
+    y: 156
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
@@ -325,9 +357,9 @@ MonoBehaviour:
     Text: '*Kinsi starts to cough*'
     CharacterSprite: {fileID: 0}
   ParentNode: {fileID: 0}
-  ChildNode: {fileID: 0}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  ChildNode: {fileID: -5431865483155456990}
+  _isExternalFunc: 1
+  _externalFunctionName: SwitchToTarget
 --- !u!114 &5748496910119246407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,21 +376,20 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 97
-    y: 244
+    x: 315
+    y: 134
     width: 190
-    height: 135
+    height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
     CharacterName: Avani
-    Text: '"Oh dear, drink this. It will make you feel better. May the spirits be
-      with us to help you home..."'
+    Text: '"You just caught a cold in the forest. Let''s go now."'
     CharacterSprite: {fileID: 0}
-  ParentNode: {fileID: 0}
+  ParentNode: {fileID: 7508738828724677307}
   ChildNode: {fileID: 5433688389531524608}
-  _isExternalFunc: 0
-  _externalFunctionName: 
+  _isExternalFunc: 1
+  _externalFunctionName: SwitchToPlayer
 --- !u!114 &7508738828724677307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,8 +406,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -140
-    y: 246
+    x: 89
+    y: 134
     width: 190
     height: 155
   IsDragging: 0
@@ -385,5 +416,8 @@ MonoBehaviour:
   - You've got a cold...
   - Drink this...
   - Honey what's wrong...
-  ParentSentenceNode: {fileID: 0}
-  ChildSentenceNodes: []
+  ParentSentenceNode: {fileID: -152576675531248207}
+  ChildSentenceNodes:
+  - {fileID: 5748496910119246407}
+  - {fileID: 979298796106597797}
+  - {fileID: -7152527174044862548}

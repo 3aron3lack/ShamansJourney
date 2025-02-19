@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,7 +7,10 @@ public class PlayerDrumMechanic : MonoBehaviour
     public bool drumIsPressed = false;
     public bool isPlayingDrums = false;
     public bool drumCounter = false;
+    private Animator animatorParams;
 
+    private float timeout = 10f;
+    //private float lastPressTime;
 
     [SerializeField] private AudioSource drumSource;
     [SerializeField] private AudioClip drumClip;
@@ -16,12 +20,13 @@ public class PlayerDrumMechanic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animatorParams = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayDrums();        
+        PlayDrums();
     }
 
     public void OnPlayDrums(InputAction.CallbackContext context)
@@ -31,6 +36,10 @@ public class PlayerDrumMechanic : MonoBehaviour
             drumIsPressed = true;
             PlayDrums();
             PlayDrumSound();
+            DrumAnimation(true);
+        } else
+        {
+            DrumAnimation(false);
         }
     }
 
@@ -42,7 +51,6 @@ public class PlayerDrumMechanic : MonoBehaviour
             Debug.Log("Drum played");
             drumIsPressed = false;
             drumCounter = true;
-
             return true;
         }
         else
@@ -60,4 +68,7 @@ public class PlayerDrumMechanic : MonoBehaviour
         }
     }
 
+    private void DrumAnimation(bool isPlayingDrums) {
+        animatorParams.SetBool("isDrumming", isPlayingDrums);
+    }
 }

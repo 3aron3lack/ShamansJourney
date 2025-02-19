@@ -1,24 +1,40 @@
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject optionsMenu;
 
+    [SerializeField] string nextScene;
+    [SerializeField] bool isMainMenu;
+
     private bool inMenu = false;
     private bool inOptions = false;
 
+    private void Start()
+    {
+        if(!inMenu)
+        {
+            Cursor.visible = false;
+        }
+    }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !inMenu)
+        if(!isMainMenu)
         {
-            Pause();
+            if (Input.GetKeyDown(KeyCode.Escape) && !inMenu)
+            {
+                Pause();
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && inMenu)
+            {
+                Resume();
+            }
         }
-        else if(Input.GetKeyDown(KeyCode.Escape) && inMenu)
-        {
-            Resume();
-        }
+        
     }
 
     public void Pause()
@@ -28,7 +44,7 @@ public class PauseMenu : MonoBehaviour
             optionsMenu.SetActive(false);
             inOptions = false;
         }
-
+        Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         inMenu = true;
@@ -36,7 +52,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
-
+        Cursor.visible = false;
         Time.timeScale = 1f;
         inMenu = false;
     }
@@ -48,18 +64,18 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
     }
     public void ExitMainMenu()
-    {
-        //pauseMenu.SetActive(false);
+    {        
         Debug.Log("Exit to Main Menu will be added later");
-
-        Time.timeScale = 0f;
+        SceneManager.LoadScene(sceneName: nextScene);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
     public void ExitDesktop()
     {
-        //pauseMenu.SetActive(false);
-        Debug.Log("Exit to Desktop will be added later");
-
-        Time.timeScale = 0f;
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
     }
 
     

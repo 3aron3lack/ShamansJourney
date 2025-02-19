@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float drumBoolTimer = 5f;
     private float timer = 0;
+    private Animator animatorParams;
+    private GameObject player;
+    
 
     //[SerializeField] private Camera cam =
 
@@ -29,6 +32,8 @@ public class PlayerController : MonoBehaviour
     public bool isInteracting = false;
 
     public bool canMove = true;
+
+    
 
     // - CharacterController Values
     private CharacterController characterController;
@@ -52,6 +57,8 @@ public class PlayerController : MonoBehaviour
         //DrumInput drumInput;
         //rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
+        animatorParams = GetComponentInChildren<Animator>();
+        player = GameObject.FindWithTag("Avani");
     }
 
     // Update is called once per frame
@@ -85,12 +92,17 @@ public class PlayerController : MonoBehaviour
 
         Vector3 fallVector = Vector3.zero;
 
-
+        
         //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
 
         //Debug.Log(Camera.main.transform.forward);
         movement = cameraOrientation * movement;
-        
+
+        if (movement != new Vector3(0,0,0))
+            animatorParams.SetBool("isMoving", true);
+        else
+            animatorParams.SetBool("isMoving", false);
+
         //transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);   
         characterController.Move(movement * moveSpeed * Time.deltaTime);
         // Still needs gravity
@@ -99,7 +111,7 @@ public class PlayerController : MonoBehaviour
             fallVector += Physics.gravity;
         }
         characterController.Move(fallVector * Time.deltaTime);
-
+        SpriteFlipX();
 
         //rb.MovePosition(movement * moveSpeed * Time.deltaTime);
         //rb.transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
@@ -136,7 +148,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void SpriteFlipX()
+    {
+        float move = Input.GetAxisRaw("Horizontal");
 
+        if (move > 0)
+            player.transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);  // Face right
+        else if (move < 0)
+            player.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f); // Face left
+        
+    }
     // --- NEW DRUM MECHANIC ---
 
     // No Idea why it works now. It might just work for the dialog, so keep the old code up. It migth be necessary for later.

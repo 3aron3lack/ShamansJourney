@@ -5,7 +5,10 @@ public class RhythmInteraction : MonoBehaviour
 {
     private RhythmMaterialLerp rhythmMaterialLerp;
 
+    [Header("Events")]
+
     [SerializeField] private UnityEvent OnInteractionEnd;
+    [SerializeField] private UnityEvent OnBeat;
 
     [Header("Audio Settings")]
     
@@ -37,12 +40,12 @@ public class RhythmInteraction : MonoBehaviour
     private float inactionTimer = 0;
 
     public float maxInactionTime = 0.2f;
-    public int currentInaction;
+    private int currentInaction;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        rhythmMaterialLerp = GetComponent<RhythmMaterialLerp>();
+        //rhythmMaterialLerp = GetComponent<RhythmMaterialLerp>();
     }
 
     // Update is called once per frame
@@ -92,23 +95,26 @@ public class RhythmInteraction : MonoBehaviour
         //    Debug.Log("playerInputCount is: " + playerInputCount);
         //}
 
+
         // -- New Method --
 
         if(playerDrums.drumCounter == true)
         {
             if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= timeBetweenBeat[currentTBB] -  deviationBpm)
             {
-                rhythmMaterialLerp.LerpToEmissionCol();
+                //rhythmMaterialLerp.LerpToEmissionCol();
+                //Debug.Log("Current deviation is: " + deviationBpm);
+                inactionTimer = 0;
                 playerInputCount++;
-               // Debug.Log("current time is: " + rhythmTimer);
+                Debug.Log("current time is: " + rhythmTimer);
 
-                if (playerInputCount >= rhythmInitLength)
-                {
-                    // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
-                    rhythmMaterialLerp.BlinkOnEnd();
-                }
-                else
-                    rhythmMaterialLerp.BlinkOnBeat();
+                //if (playerInputCount >= rhythmInitLength)
+                //{
+                //    // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
+                //    rhythmMaterialLerp.BlinkOnEnd();
+                //}
+                //else
+                //    rhythmMaterialLerp.BlinkOnBeat();
             }
             else
             {
@@ -156,6 +162,7 @@ public class RhythmInteraction : MonoBehaviour
             //Debug.Log("rhytmTimer is: " + rhythmTimer);
             if(rhythmTimer > timeBetweenBeat[currentTBB])
             {
+                OnBeat.Invoke();
                 audioSource.PlayOneShot(rhythmClip);
                 rhythmTimer = 0;
                 //Debug.Log("rhytmTimer reset");
@@ -176,11 +183,12 @@ public class RhythmInteraction : MonoBehaviour
                     currentInaction = 0;
                 }
 
-                Debug.Log("inactionTimer is: " + inactionTimer);
-                if (inactionTimer > timeBetweenBeat[currentInaction])
+                //Debug.Log("inactionTimer is: " + inactionTimer);
+                if (inactionTimer > timeBetweenBeat[currentInaction] + deviationBpm)
                 {
-                    inactionTimer = 0;
                     Debug.Log("inactionTimer reset");
+                    Debug.Log("inactionTimer is: " + inactionTimer);
+                    inactionTimer = 0;                    
                     playerInputCount = 0;
                     //Debug.Log("Max Inaction Time reached");
                 }

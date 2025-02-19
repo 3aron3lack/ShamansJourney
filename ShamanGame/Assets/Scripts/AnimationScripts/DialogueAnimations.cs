@@ -14,11 +14,11 @@ public class DialogueAnimations : MonoBehaviour
 
     public bool isAnimation = true;
 
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     public void StartAnimation()
@@ -69,9 +69,23 @@ public class DialogueAnimations : MonoBehaviour
             Debug.Log("Nothing lol");
     }
 
+    public void AnimationTrue()
+    {
+        animator.SetBool("DoShake", true);
+    }
+    public void AnimationFalse()
+    {
+        animator.SetBool("DoShake", false);
+    }
+
+
     public void AnimtationBoolOff()
     {
         isAnimation = false;
+    }
+    public void AnimtationBoolOn()
+    {
+        isAnimation = true;
     }
 
 

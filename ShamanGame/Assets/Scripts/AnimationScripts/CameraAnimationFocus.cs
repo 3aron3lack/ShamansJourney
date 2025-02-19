@@ -4,6 +4,7 @@ public class CameraAnimationFocus : StateMachineBehaviour
 {
     CameraDialogueFocus cdf;
     ManagePlayerMovement playerMovement;
+    AnimationAudio animationAudio;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -12,7 +13,11 @@ public class CameraAnimationFocus : StateMachineBehaviour
         cdf.SwitchToTarget();
 
         playerMovement = animator.GetComponentInChildren<ManagePlayerMovement>();
+        //playerMovement = animator.GetComponent<ManagePlayerMovement>();
         playerMovement.DisableMovement();
+
+        animationAudio = animator.GetComponent<AnimationAudio>();
+        animationAudio.PlayAudio();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

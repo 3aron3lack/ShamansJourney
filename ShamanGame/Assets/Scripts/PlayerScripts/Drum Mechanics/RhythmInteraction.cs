@@ -45,7 +45,7 @@ public class RhythmInteraction : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        rhythmMaterialLerp = GetComponent<RhythmMaterialLerp>();
+        //rhythmMaterialLerp = GetComponent<RhythmMaterialLerp>();
     }
 
     // Update is called once per frame
@@ -102,19 +102,19 @@ public class RhythmInteraction : MonoBehaviour
         {
             if(rhythmTimer <= 0 + deviationBpm || rhythmTimer >= timeBetweenBeat[currentTBB] -  deviationBpm)
             {
-                rhythmMaterialLerp.LerpToEmissionCol();
+                //rhythmMaterialLerp.LerpToEmissionCol();
                 //Debug.Log("Current deviation is: " + deviationBpm);
                 inactionTimer = 0;
                 playerInputCount++;
                 Debug.Log("current time is: " + rhythmTimer);
 
-                if (playerInputCount >= rhythmInitLength)
-                {
-                    // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
-                    rhythmMaterialLerp.BlinkOnEnd();
-                }
-                else
-                    rhythmMaterialLerp.BlinkOnBeat();
+                //if (playerInputCount >= rhythmInitLength)
+                //{
+                //    // The line below sometimes stops in the middle of the transition. Maybe the timer is at fault?
+                //    rhythmMaterialLerp.BlinkOnEnd();
+                //}
+                //else
+                //    rhythmMaterialLerp.BlinkOnBeat();
             }
             else
             {

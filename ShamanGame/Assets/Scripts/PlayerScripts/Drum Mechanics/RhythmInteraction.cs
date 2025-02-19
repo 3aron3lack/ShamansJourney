@@ -59,12 +59,11 @@ public class RhythmInteraction : MonoBehaviour
     {
         if(playerInputCount >= rhythmInitLength) 
         {
-            //Debug.Log("Initiate Mechanic!");
             notificationSource.PlayOneShot(successClip);
 
             //rhythmMaterialLerp.FinishedMaterial();
             OnInteractionEnd.Invoke();
-            
+
 
             playerInputCount = 0;
             rhythmIsPlaying = false;

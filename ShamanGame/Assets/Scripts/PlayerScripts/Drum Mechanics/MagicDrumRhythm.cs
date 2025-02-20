@@ -28,19 +28,20 @@ public class MagicDrumRhythm : ScriptableObject
         // The spell can be a scriptable object itself. Or each a unique class
     }
 
-    private void OnEnable()
-    {
-        EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
-        EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
-    }
-    private void OnPlayModeStateChanged (PlayModeStateChange obj)
-    {
-        switch (obj)
-        {
-            case PlayModeStateChange.EnteredPlayMode:
-                currentPosArray = 0; 
-                break;
-        }
-    }
+    // --- Commented out due to Compilor Error ---
+    //private void OnEnable()
+    //{
+    //    EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
+    //    EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+    //}
+    //private void OnPlayModeStateChanged (PlayModeStateChange obj)
+    //{
+    //    switch (obj)
+    //    {
+    //        case PlayModeStateChange.EnteredPlayMode:
+    //            currentPosArray = 0; 
+    //            break;
+    //    }
+    //}
 
 }

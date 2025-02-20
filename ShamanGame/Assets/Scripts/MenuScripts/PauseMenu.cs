@@ -1,4 +1,4 @@
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -78,7 +78,10 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    
+    public void TurnCursorOff()
+    {
+        Cursor.visible = false;
+    }
 
 
 }

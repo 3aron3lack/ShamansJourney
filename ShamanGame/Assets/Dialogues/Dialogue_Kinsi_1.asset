@@ -16,14 +16,14 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 290
-    y: 309
+    x: -33
+    y: 306
     width: 190
     height: 155
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: Avain
+    CharacterName: Avani
     Text: '"That''s great honey, I''m proud of you. But let''s go home, hm? I''ve
       been really worried."'
     CharacterSprite: {fileID: 0}
@@ -47,8 +47,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 762
-    y: 309
+    x: 439
+    y: 306
     width: 190
     height: 155
   IsDragging: 0
@@ -77,8 +77,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -773
-    y: 219
+    x: -1096
+    y: 216
     width: 190
     height: 155
   IsDragging: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 969
-    y: 314
+    x: 646
+    y: 311
     width: 190
     height: 155
   IsDragging: 0
@@ -137,8 +137,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -195
-    y: 161
+    x: -518
+    y: 158
     width: 190
     height: 155
   IsDragging: 0
@@ -196,8 +196,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -196
-    y: 309
+    x: -519
+    y: 306
     width: 190
     height: 155
   IsDragging: 0
@@ -226,8 +226,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 527
-    y: 310
+    x: 204
+    y: 307
     width: 190
     height: 155
   IsDragging: 0
@@ -256,8 +256,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 37
-    y: 157
+    x: -286
+    y: 154
     width: 190
     height: 155
   IsDragging: 0
@@ -286,8 +286,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 976
-    y: 156
+    x: 653
+    y: 153
     width: 190
     height: 155
   IsDragging: 0
@@ -316,8 +316,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: -481
-    y: 223
+    x: -804
+    y: 220
     width: 190
     height: 135
   IsDragging: 0
@@ -345,8 +345,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 767
-    y: 156
+    x: 444
+    y: 153
     width: 190
     height: 155
   IsDragging: 0
@@ -375,8 +375,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 40
-    y: 309
+    x: -283
+    y: 306
     width: 190
     height: 155
   IsDragging: 0
@@ -405,8 +405,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 290
-    y: 158
+    x: -33
+    y: 155
     width: 190
     height: 155
   IsDragging: 0
@@ -435,8 +435,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 527
-    y: 157
+    x: 204
+    y: 154
     width: 190
     height: 155
   IsDragging: 0
